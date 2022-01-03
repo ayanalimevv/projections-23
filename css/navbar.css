@@ -1,0 +1,44 @@
+.header {
+  background-color: #000;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar {
+  top: 0;
+  width: 1280px;
+  background: black;
+  padding: 1em;
+  position: absolute;
+}
+
+.header .navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.header .logo-gif {
+  width: auto;
+  margin-top: -15px;
+  height: 60px;
+}
+
+.header .active {
+  font-weight: bold !important;
+  color: #2d5eff !important;
+}
+
+.header .logotext {
+  margin-top: 0.5rem;
+  margin-left: -1rem;
+  height: 40px;
+}
+/*# sourceMappingURL=navbar.css.map */
