@@ -1,4 +1,8 @@
 .navbar{
+    width: 1280px!important;
+    position: fixed;
+    top: 0;
+    z-index: 11111;
     .navbar-brand{
       font-size: 1.5rem;
       font-weight: bold;
@@ -16,6 +20,8 @@
       &:focus,&:active{
         color: #fff;
       }
+
+    
     }
     .nav-item{
       padding: 0.3rem 0.5rem;

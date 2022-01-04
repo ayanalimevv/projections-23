@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 :root {
   --color_0: 255,255,255;
   --color_27: 60,67,147;
@@ -73,10 +78,42 @@
   --shc-mutated-brightness: 26,31,39;
 }
 
-#events {
+body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url(../imgs/dragon.png) no-repeat;
   background-size: cover;
-  width: 100vw;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  -webkit-perspective-origin: 25rem;
+          perspective-origin: 25rem;
+  -webkit-perspective: 25em;
+          perspective: 25em;
+  -webkit-perspective-origin: 50% calc(50% - 3em);
+          perspective-origin: 50% calc(50% - 3em);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .main {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#events {
+  width: 1280px;
   padding: 2rem;
 }
 
@@ -146,10 +183,26 @@
   color: #8b95a6;
 }
 
-#events .card-body a {
-  background-color: #8cefe9;
-  padding: 15px 25px;
-  border-radius: 2rem;
+#events .card-body .btn {
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 5rem;
+  background-color: #8CEFE9;
+  color: #000;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+#events .card-body .btn:hover {
+  border: 2px solid #fff;
+  background: transparent;
+  color: white;
 }
 
 @media screen and (max-width: 425px) {

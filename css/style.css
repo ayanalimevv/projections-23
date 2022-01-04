@@ -89,6 +89,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #0b1321;
   color: white;
   font-family: 'Poppins', sans-serif;
   -webkit-perspective-origin: 25rem;
@@ -190,7 +191,7 @@ section {
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .hero-info .textInfo .explore:hover {
@@ -251,7 +252,7 @@ section {
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .hero-info .infoCard .ourTeam:hover {

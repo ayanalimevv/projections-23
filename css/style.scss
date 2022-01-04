@@ -89,6 +89,7 @@ html{
 body{
     display: grid;
     justify-content: center;
+    background-color: #0b1321;
     color: white;
     font-family: 'Poppins', sans-serif;
     perspective-origin: 25rem ;
@@ -168,7 +169,7 @@ section{
             text-align: center;
             transition: .2s ease-out;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 400;
             &:hover{
                 border: 2px solid $white;
                 background: transparent;
@@ -217,7 +218,7 @@ section{
             text-align: center;
             transition: .2s ease-out;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 400;
             &:hover{
                 border: 2px solid #8CEFE9;
                 background: #8CEFE9;

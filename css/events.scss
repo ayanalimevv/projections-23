@@ -11,6 +11,12 @@ $main-font: "Poppins";
     margin: 0;
     box-sizing: border-box;  
 }
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 :root{
     --color_0: 255,255,255;
     --color_27: 60,67,147;
@@ -77,12 +83,34 @@ $main-font: "Poppins";
     --shc-mutated-brightness: 26,31,39;
 }
 
-#events {
+body{
+    display: grid;
+    justify-content: center;
     background: url(../imgs/dragon.png)
-      no-repeat;
+    no-repeat;
     background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    perspective-origin: 25rem ;
+    // background-color: #8CEFE9;
+    perspective: 25em;
+    perspective-origin: 50% calc(50% - 3em);
+    transform-style: preserve-3d;
+    
+
+    .main{
+        width: 1280px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+}
+
+
+#events {
     //   height: 100vh;
-    width: 100vw;
+    width: 1280px;
     padding: 2rem;
     .main-div {
       .main-head {
@@ -132,12 +160,25 @@ $main-font: "Poppins";
       p {
         color: $para-color;
       }
-      a {
-        background-color: $secondary-color;
-        padding: 15px 25px;
-        border-radius: 2rem;
-        //   border-radius: ;
-      }
+      .btn {
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 5rem;
+        background-color: #8CEFE9;
+        color: #000;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        transition: .2s ease-out;
+        cursor: pointer;
+        font-weight: 400;
+        &:hover{
+            border: 2px solid $white;
+            background: transparent;
+            color:white;
+          }
+
+    }
     }
   }
   @media screen and(max-width:425px) {
