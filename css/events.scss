@@ -83,9 +83,15 @@ html{
     --shc-mutated-brightness: 26,31,39;
 }
 
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 body{
-    display: grid;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: fit-content;
     background: url(../imgs/dragon.png)
     no-repeat;
     background-size: cover;
@@ -103,6 +109,7 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        height: fit-content;
     
     }
 }
