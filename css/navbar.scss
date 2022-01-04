@@ -2,6 +2,9 @@
     position: fixed;
     top: 0;
     z-index: 11111;
+    display: flex;
+    align-content: space-evenly;
+
     .navbar-brand{
       font-size: 1.5rem;
       font-weight: bold;
@@ -51,4 +54,9 @@
 .dropdown-item:focus, .dropdown-item:hover {
     color: #fff!important;
     background-color: #00000070!important;
+}
+
+.navbar-toggler {
+  background-color: #39676d;
+  border: 2px solid white;
 }
