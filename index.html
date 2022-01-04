@@ -9,49 +9,241 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
     <div class="main">
-
-        <section class="hero">
-
-            <div class="container">
-            <div class="row">
-    
-               <div class="col hero-clean">
-
-
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Projections</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sponsers.html">Sponsers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="about.html">Info</a></li>
+                      <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                      <li><a class="dropdown-item" href="team.html">Team</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </nav>
+
+
+   <section class="hero">
+<div class="container">
+<div class="row" style="width: 1280px; overflow-y: scroll">
+    <!-- <div class="col hero-clean">
+
+
+    </div> -->
              <div class="col hero-info">
 
-                  <div class="h1">
-                          ENVISION
-                     </div>
+                <div class="textInfo">
+                    
+                 <h1>ENVISION</h1>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. Its easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Im a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+
+                    <a href="events.html"><div class="explore">
+                        Explore
+                    </div></a>
+                
 
 
+                </div>
 
-    </div>
+                <div class="infoCard">
+
+                    <video  autoplay loop=-1 >
+                        <source src="video/file.mp4" type="video/mp4">
+                    </video>
+                    
+
+                    <h3>ENVISION</h3>
+
+                    <p>
+                        Evolution is the essence of existence. We change to survive, and we change to thrive. Everything that the cavemen once dreamt about, is now a reality. Technology and its evolution over the years has bewildered the minds, and it shall continue to do so for as long as curiosity exists. This is our theme. We "envision" what our future will be, and we work towards it.
+                    </p>
+
+                    <div class="ourTeam">
+                        Our Team
+                    </div>
+
+
+                </div>
+
+
+            </div>
 </div>
 
 
 
+</div>
+
+</section>  <!--End of Hero-->
+
+<section class="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="padding: 5rem;">
+
+                <img class="tabAni" src="imgs/tab.png"  alt="tabs">
+
             </div>
+            <div class="col">
+                <h1 class="about-head">About Us</h1>
+                <p class="about-para">Projections is an International Technical Fest which is being organized in Parul
+                    University
+                    with more than
+                    45+ different technical,non-technical, special event, workshops, guest lectures being
+                    organized. With more
+                    than 7000 participants and 15000 viewers last year, Projections is the largest technical
+                    festival in
+                    Gujarat. Projections’20 honored the motherland by thanking the unmatched hard work and
+                    dedication of
+                    scientists at ISRO by campaigning with the tagline: Taking a Billion Dreams to Space. This
+                    year Projections
+                    is going to be organized in the midweek of February and the theme is Technoverse , a unique
+                    combination of
+                    all the technologies and the universe they lie within.
+                </p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col">
+                <div class="stats-div">
+                    <span class="autoCounter">17+ </span>
+                    <p>Years Of Successfully Celebartion</p>
+                </div>
+                </div>
 
-
+            <div class="col">
+                <div class="stats-div" >
+                    <span class="autoCounter">15000+</span>
+                    <p> Viewers</p>
+                </div>
+            </div>
+              
+            <div class="col">
+                <div class="stats-div" style="margin-left:5rem;">
+                    <span class="autoCounter">7000+</span>
+                    <p> Participants</p>
+                </div>
+            </div>
             
-        </section>
+            </div>
+            <div class="row d-flex justify-center" style="text-align: center;">
+                <div class="stats-div"><span class="footfalls autoCounter" >30000+</span>
+                    <p> Foot-Falls</p>
+                </div>
+            </div>
+        </div>
+
+</section>  <!--End of About Us-->
 
 
 
 
-    </div>
+</div> <!-- End of main container -->
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+let relPos="20px";
+
+autoCounter = document.getElementsByClassName("autoCounter")
+
+let span1 = autoCounter[0];
+let span2 = autoCounter[1];
+let span3 = autoCounter[2];
+let span4 = autoCounter[3]
+function counter(el, limit) {
+    let i = limit - 100;
+    Math.abs(i)
+    let element = el;
+    let interval = setInterval(() => {
+        el.innerText = i +"+";
+        i >= limit ? clearInterval(interval) : i++;
+
+    }, 16)
+}
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".about-head", { x: -100, opacity: 0, duration: 1, ease: Power2.easeOut });
+gsap.from(".about-para", { y: -100, opacity: 0, duration: 1, delay: 1, ease: Power2.easeOut });
+let animation=gsap.from(".trigger", {
+    scrollTrigger:
+    {
+        trigger: ".stats-div",
+        onEnter: function counterdiv() {
+            counter(span1, 17);
+            counter(span2, 20000);
+            counter(span3, 7000);
+            counter(span4, 30000);
+            
+        },
+        start: `${relPos} 80%`
+        
+       
+    },
+    x:"-20",
+    duration: 0.5,
+    stagger: 0.5
+});
+
+
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
+const yourFunction = async () => {
+  await delay(5000);
+  span1.innerText = "17 +"
+};
+
+yourFunction()
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
