@@ -150,6 +150,8 @@ section {
   margin-left: 8rem;
   padding: 2rem;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding-left: 38rem;
 }
 
@@ -312,5 +314,9 @@ section {
 .footfalls:hover {
   -webkit-transform: translateY(-10deg);
           transform: translateY(-10deg);
+}
+
+.hero-info::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

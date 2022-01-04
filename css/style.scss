@@ -135,6 +135,8 @@ section{
     margin-left: 8rem;
     padding: 2rem;
     overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
     padding-left: 38rem;
 
     .textInfo {
@@ -279,3 +281,10 @@ section{
     }
 }
 
+
+
+//Scrollbar
+
+.hero-info::-webkit-scrollbar {
+    display: none;
+  }
