@@ -94,12 +94,6 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-perspective-origin: 25rem;
           perspective-origin: 25rem;
-  -webkit-perspective: 25em;
-          perspective: 25em;
-  -webkit-perspective-origin: 50% calc(50% - 3em);
-          perspective-origin: 50% calc(50% - 3em);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 section {
@@ -162,7 +156,7 @@ section {
 
 .hero-info .textInfo p {
   color: gray;
-  width: 50%;
+  width: 100%;
   font-family: 'Questrial', sans-serif;
 }
 
@@ -253,7 +247,6 @@ section {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 1280px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0b1321), to(#0B1321));
   background: linear-gradient(180deg, #0b1321, #0B1321);
   background-size: cover;
@@ -304,5 +297,9 @@ section {
 
 .hero-info::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles here */
 }
 /*# sourceMappingURL=style.css.map */
