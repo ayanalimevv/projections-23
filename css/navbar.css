@@ -55,3 +55,18 @@
   background-image: url(../svg/menu.svg) !important;
 }
 /*# sourceMappingURL=navbar.css.map */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#8cefe9; 
+  border-radius: 10px;
+}
