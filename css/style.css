@@ -107,6 +107,10 @@ section {
   background-size: cover;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .hero-clean {
   width: 100%;
   height: 100%;
@@ -295,7 +299,52 @@ section {
           transform: translateY(-10deg);
 }
 
+.campusAmb {
+  background-color: #0b1321;
+  color: #fff;
+  height: 720px;
+  position: relative;
+  -webkit-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
+}
+
+.ca-img {
+  background: url(../imgs/CA.jpg) no-repeat;
+  background-size: contain;
+  margin-right: 1rem;
+}
+
+.ca-info {
+  margin-top: -2rem;
+}
+
+.registerca {
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 5rem;
+  background-color: #000;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.registerca:hover {
+  border: 2px solid #fff;
+  background: #8CEFE9;
+  color: black;
+}
+
 .hero-info::-webkit-scrollbar {
+  display: none;
+}
+
+.campusAmb::-webkit-scrollbar {
   display: none;
 }
 

@@ -95,9 +95,6 @@ body{
     perspective-origin: 25rem ;
     // background-color: #8CEFE9;
 
-    
-
- 
 }
 
 section{
@@ -110,7 +107,9 @@ section{
     background: url(../imgs/hero-bg.png) no-repeat;
     background-size: cover;
 }
-
+a{
+    text-decoration: none!important;
+}
 .hero-clean {
     width:100%;
     height: 100%;
@@ -272,11 +271,51 @@ section{
     }
 }
 
+.campusAmb{
+    background-color: #0b1321;
+    color: #fff;
+    height: 720px;
+    position: relative;
+    transition: all 1.2s ease-out;
+}
 
+
+
+.ca-img{
+    background: url(../imgs/CA.jpg) no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+}
+.ca-info{
+    margin-top: -2rem;
+}
+
+.registerca {
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 5rem;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: .2s ease-out;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover{
+        border: 2px solid $white;
+        background: #8CEFE9;
+        color:black;
+      }
+
+}
 
 //Scrollbar
 
 .hero-info::-webkit-scrollbar {
+    display: none;
+  }
+.campusAmb::-webkit-scrollbar {
     display: none;
   }
 

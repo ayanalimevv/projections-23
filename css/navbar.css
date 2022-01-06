@@ -43,7 +43,7 @@
 
 .dropdown-menu.show {
   display: block;
-  background: #ffffff12 !important;
+  background: #000000d9 !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {

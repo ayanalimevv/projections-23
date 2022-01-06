@@ -40,7 +40,7 @@
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="about.html">Info</a></li>
-                      <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                      <li><a class="dropdown-item" href="history.html">History</a></li>
                       <li><a class="dropdown-item" href="team.html">Team</a></li>
                     </ul>
                   </li>
@@ -159,20 +159,70 @@
 </section>  <!--End of About Us-->
 
 
-<section class="campusAmb">
+<section class="campusAmb" id="campusAmb">
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
+  <div class="conatiner">
+    <div class="row ">
+    <div class="col ca-img">
+    </div>
+    <div class="col ca-info">
 
-      </div>
-      <div class="col">
-        
+      <h1>Campus Ambassador</h1>
+
+      <p>
+        Do you want to be a part of Gujarat's Largest Technical Festival as a university representative?
+        The CA Program is the backbone of Parul University's Projections
+        We want to reach out to college students all around the nation to pique their interest in science and technology while also providing them with a platform to pursue it.
+        You will be rewarded for meeting your responsibilities as a CA, and you will be encouraged to continue to work on improving your own abilities. 
+                  <br> &nbsp;<br>
+          <strong>Why become a Campus Ambassador for Projections?</strong>
+          <ul style="margin-left: 1rem;">
+          <li>Leadership Skills </li>
+          <li>Communication Skills </li>
+          <li>Expand your reach through Socialising</li>
+          </ul>
+
+
+
+
+Incentives like:  <br>
+<ul style="margin-left: 1rem;">
+<li>Certificates</li> 
+<li>Monthly Shout-outs</li>
+<li>Projections goodies</li>
+<li>Letter of Recommendation</li>
+
+</ul>
+</p>
+      
+      
+      <div class="registerca">
+        Join Now
       </div>
     </div>
   </div>
+</div>
 
 
+
+
+</section>
+
+
+<section class="footer">
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
 
 </section>
 
@@ -180,8 +230,23 @@
 
 
 
+<script>
+   showScrollTop = () =>{
+    const currentScrollPosition = window.pageYOffset; 
+    let elementID = 'campusAmb'
+    const elementOffsetTop = document.getElementById(elementID).offsetTop
 
+    if ( currentScrollPosition > elementOffsetTop - 300){
+        document.getElementById('campusAmb').style.backgroundColor = "white";
+        document.getElementById('campusAmb').style.color = "#0b1321";
+    } else {
+       document.getElementById('campusAmb').style.backgroundColor = "#0b1321";
+        document.getElementById('campusAmb').style.color ="white"; 
+    }
+  }
 
+  window.addEventListener('scroll', showScrollTop)
+</script>
 
 
 
