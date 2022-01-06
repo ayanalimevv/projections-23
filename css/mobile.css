@@ -151,7 +151,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background: black;
+  background: #0b1321;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,5 +200,39 @@ body {
 .envision .ecard h4, .envision .ecard p {
   margin-top: .5rem;
   padding-left: .2rem;
+}
+
+.mabout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 20rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mabout .tab {
+  height: 15rem;
+  width: 100%;
+}
+
+.mabout h3 {
+  margin-top: 2rem;
+  color: #8cefe9;
+}
+
+.mabout p {
+  font-size: .79rem;
 }
 /*# sourceMappingURL=mobile.css.map */
