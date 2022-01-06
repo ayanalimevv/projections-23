@@ -96,6 +96,13 @@ body {
           perspective-origin: 25rem;
 }
 
+body .main {
+  width: 1280px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 section {
   padding: 6rem 3rem;
 }
