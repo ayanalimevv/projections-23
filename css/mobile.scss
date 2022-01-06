@@ -90,14 +90,14 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-body{
+body {
     display: grid;
-    justify-content: center;
+    place-content: space-around;
+    -webkit-box-pack: center;
+    place-items: center;
     background-color: #0b1321;
     color: white;
     font-family: 'Poppins', sans-serif;
-    // background-color: #8CEFE9;
-
 }
 
 .mheader{
@@ -145,6 +145,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     
 
     .ecard{
