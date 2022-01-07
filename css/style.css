@@ -92,8 +92,6 @@ body {
   background-color: #0b1321;
   color: white;
   font-family: 'Poppins', sans-serif;
-  -webkit-perspective-origin: 25rem;
-          perspective-origin: 25rem;
 }
 
 body .main {

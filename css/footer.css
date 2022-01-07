@@ -1,6 +1,7 @@
   .footer{
     width: 100%;
     height: auto;
+    padding: 2rem;
     background: url(../imgs/footer.png) no-repeat;
     background-size: cover;
     backdrop-filter: blur(4px);

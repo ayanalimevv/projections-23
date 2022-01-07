@@ -9,7 +9,8 @@
 }
 
 body {
-  background: url(../imgs/footer.png);
+  background: url(../imgs/footer.png) no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +22,24 @@ body {
           align-items: center;
   color: white;
   font-family: 'Poppins';
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+body .main {
+  width: 1280px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -42,6 +61,8 @@ body {
           backdrop-filter: blur(4px);
   padding: 2rem;
   margin: 6rem 0 3rem 0;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .form-div form input, .form-div form textarea {

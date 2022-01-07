@@ -13,14 +13,23 @@ $main-font: "Poppins";
     text-decoration: none;
 }
 body{
-    background: url(../imgs/footer.png);
-    // height: 100vh;
+    background: url(../imgs/footer.png) no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-family: 'Poppins';
     flex-direction: column;
+    overflow-x: hidden;
+
+    .main{
+        width: 1280px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 .form-div{
     display: flex;
@@ -30,6 +39,7 @@ body{
     backdrop-filter: blur(4px);
     padding: 2rem;
     margin:6rem 0 3rem 0;
+     align-self: center;
     form{
     
     input,textarea{
