@@ -1,0 +1,22 @@
+$secondary-color: #8cefe9;
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 1rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      border-radius: 1rem;
+    background: $secondary-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($color: $secondary-color, $alpha: 0.8)
+  }

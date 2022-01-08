@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,74 +10,91 @@
   text-decoration: none;
 }
 
+html {
+  cursor: none;
+}
+
+html a:hover {
+  cursor: none;
+}
+
 a {
   text-decoration: none;
 }
 
 :root {
-  --color_0: 255,255,255;
-  --color_27: 60,67,147;
-  --color_1: 255,255,255;
-  --color_2: 0,0,0;
-  --color_3: 237,28,36;
-  --color_4: 0,136,203;
-  --color_5: 255,203,5;
-  --color_6: 114,114,114;
-  --color_7: 176,176,176;
-  --color_8: 255,255,255;
-  --color_28: 90,100,220;
-  --color_9: 114,114,114;
-  --color_10: 176,176,176;
-  --color_11: 0,0,0;
-  --color_12: 153,153,151;
-  --color_13: 199,199,199;
-  --color_14: 232,230,230;
-  --color_15: 255,255,255;
-  --color_16: 70,119,116;
-  --color_17: 105,179,175;
-  --color_18: 140,239,233;
-  --color_29: 163,168,232;
-  --color_19: 196,247,244;
-  --color_20: 225,247,246;
-  --color_21: 11,19,33;
-  --color_22: 52,61,77;
-  --color_23: 95,105,122;
-  --color_24: 139,149,166;
-  --color_25: 183,193,211;
-  --color_30: 195,199,243;
-  --color_31: 73,30,66;
-  --color_32: 147,60,132;
-  --color_33: 220,90,198;
-  --color_34: 232,163,220;
-  --color_35: 243,195,235;
-  --font_0: normal normal bold 60px/1.4em poppins-extralight,poppins,sans-serif;
-  --font_1: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
-  --font_2: normal normal bold 32px/1.4em poppins-extralight,poppins,sans-serif;
-  --font_3: normal normal normal 24px/1.4em poppins-semibold,poppins,sans-serif;
-  --font_4: normal normal bold 88px/1.4em poppins-extralight,poppins,sans-serif;
-  --font_5: normal normal bold 50px/1.4em poppins-extralight,poppins,sans-serif;
-  --font_6: normal normal normal 36px/1.4em poppins-semibold,poppins,sans-serif;
-  --font_7: normal normal normal 32px/1.4em poppins-semibold,poppins,sans-serif;
-  --font_8: normal normal normal 18px/1.4em questrial,sans-serif;
-  --font_9: normal normal normal 16px/1.4em questrial,sans-serif;
-  --font_10: normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  --color_0: 255, 255, 255;
+  --color_27: 60, 67, 147;
+  --color_1: 255, 255, 255;
+  --color_2: 0, 0, 0;
+  --color_3: 237, 28, 36;
+  --color_4: 0, 136, 203;
+  --color_5: 255, 203, 5;
+  --color_6: 114, 114, 114;
+  --color_7: 176, 176, 176;
+  --color_8: 255, 255, 255;
+  --color_28: 90, 100, 220;
+  --color_9: 114, 114, 114;
+  --color_10: 176, 176, 176;
+  --color_11: 0, 0, 0;
+  --color_12: 153, 153, 151;
+  --color_13: 199, 199, 199;
+  --color_14: 232, 230, 230;
+  --color_15: 255, 255, 255;
+  --color_16: 70, 119, 116;
+  --color_17: 105, 179, 175;
+  --color_18: 140, 239, 233;
+  --color_29: 163, 168, 232;
+  --color_19: 196, 247, 244;
+  --color_20: 225, 247, 246;
+  --color_21: 11, 19, 33;
+  --color_22: 52, 61, 77;
+  --color_23: 95, 105, 122;
+  --color_24: 139, 149, 166;
+  --color_25: 183, 193, 211;
+  --color_30: 195, 199, 243;
+  --color_31: 73, 30, 66;
+  --color_32: 147, 60, 132;
+  --color_33: 220, 90, 198;
+  --color_34: 232, 163, 220;
+  --color_35: 243, 195, 235;
+  --font_0: normal normal bold 60px/1.4em poppins-extralight, poppins,
+    sans-serif;
+  --font_1: normal normal normal 16px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_2: normal normal bold 32px/1.4em poppins-extralight, poppins,
+    sans-serif;
+  --font_3: normal normal normal 24px/1.4em poppins-semibold, poppins,
+    sans-serif;
+  --font_4: normal normal bold 88px/1.4em poppins-extralight, poppins,
+    sans-serif;
+  --font_5: normal normal bold 50px/1.4em poppins-extralight, poppins,
+    sans-serif;
+  --font_6: normal normal normal 36px/1.4em poppins-semibold, poppins,
+    sans-serif;
+  --font_7: normal normal normal 32px/1.4em poppins-semibold, poppins,
+    sans-serif;
+  --font_8: normal normal normal 18px/1.4em questrial, sans-serif;
+  --font_9: normal normal normal 16px/1.4em questrial, sans-serif;
+  --font_10: normal normal normal 12px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
   --wix-ads-height: 0px;
   --wix-ads-top-height: 0px;
   --site-width: 980px;
   --above-all-z-index: 100000;
   --portals-z-index: 100001;
   --minViewportSize: 320;
-  --color_26: 30,33,73;
+  --color_26: 30, 33, 73;
   --maxViewportSize: 1920;
-  --shd: 0.00px 10.00px 20px 0px rgba(11,19,33,0.2);
+  --shd: 0px 10px 20px 0px rgba(11, 19, 33, 0.2);
   --brw: 2px;
   --brd: var(--color_24);
   --bg: var(--color_22);
   --rd: 20px 20px 20px 20px;
-  --shd: 0.00px 10.00px 20px 0px rgba(11,19,33,0.2);
+  --shd: 0px 10px 20px 0px rgba(11, 19, 33, 0.2);
   --alpha-bg: 0.2;
   --alpha-brd: 0.1;
-  --shc-mutated-brightness: 26,31,39;
+  --shc-mutated-brightness: 26, 31, 39;
 }
 
 html {
@@ -91,7 +110,7 @@ body {
           justify-content: center;
   background-color: #0b1321;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body .main {
@@ -99,6 +118,48 @@ body .main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+          transform: translate(calc(-50% + 15px), -50%);
+  z-index: 10000;
+}
+
+.cursor2 {
+  z-index: 10000;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #8cefe9;
+  opacity: 0.3;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-color: #8cefe9;
+  opacity: 0.3;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
 }
 
 section {
@@ -160,27 +221,27 @@ a {
 }
 
 .hero-info .textInfo h1 {
-  color: #8CEFE9;
+  color: #8cefe9;
 }
 
 .hero-info .textInfo p {
   color: gray;
   width: 100%;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .hero-info .textInfo .explore {
   height: 3.5rem;
   width: 10rem;
   border-radius: 5rem;
-  background-color: #8CEFE9;
+  background-color: #8cefe9;
   color: #000;
   display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer;
   font-weight: 400;
 }
@@ -216,17 +277,17 @@ a {
 
 .hero-info .infoCard video {
   width: 20rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .hero-info .infoCard h3 {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .hero-info .infoCard p {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   width: 20rem;
-  padding: .2rem;
+  padding: 0.2rem;
   color: gray;
 }
 
@@ -240,15 +301,15 @@ a {
   display: grid;
   place-items: center;
   text-align: center;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer;
   font-weight: 400;
 }
 
 .hero-info .infoCard .ourTeam:hover {
-  border: 2px solid #8CEFE9;
-  background: #8CEFE9;
+  border: 2px solid #8cefe9;
+  background: #8cefe9;
   color: black;
 }
 
@@ -256,14 +317,14 @@ a {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0b1321), to(#0B1321));
-  background: linear-gradient(180deg, #0b1321, #0B1321);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b1321), to(#0b1321));
+  background: linear-gradient(180deg, #0b1321, #0b1321);
   background-size: cover;
   padding: 10rem 8rem;
 }
 
 .aboutUs h1 {
-  color: #8CEFE9;
+  color: #8cefe9;
   font-weight: bold;
   font-size: 3.5rem;
 }
@@ -333,16 +394,55 @@ a {
   display: grid;
   place-items: center;
   text-align: center;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer;
   font-weight: 500;
 }
 
 .registerca:hover {
   border: 2px solid #fff;
-  background: #8CEFE9;
+  background: #8cefe9;
   color: black;
+}
+
+#slide .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: slide 10s linear infinite 2s;
+          animation: slide 10s linear infinite 2s;
+}
+
+#slide .slide div {
+  margin-right: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .hero-info::-webkit-scrollbar {
