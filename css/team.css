@@ -27,6 +27,7 @@ i {
 
 .main-container {
   margin-top: 8rem;
+  width: 1280px !important;
 }
 
 .container {
