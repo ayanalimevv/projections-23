@@ -1,0 +1,41 @@
+// Custom cursor sass
+$secondary-color: #8cefe9;
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 10000;
+  }
+  
+  .cursor2 {
+      z-index: 10000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $secondary-color;
+    opacity: 0.3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+  }
+  
+  .hover {
+    background-color: $secondary-color;
+    opacity: 0.3;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  
+  
