@@ -1,3 +1,7 @@
+html {
+  cursor: default;
+}
+
 .cursor {
   width: 50px;
   height: 50px;
@@ -38,5 +42,32 @@
   width: 50px;
   height: 50px;
   opacity: 0.5;
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 0%;
+  height: 5px;
+  background: #8cefe9;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+.to-top {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .cursor, .cursor2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=cursor.css.map */

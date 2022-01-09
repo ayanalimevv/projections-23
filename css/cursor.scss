@@ -1,41 +1,65 @@
 // Custom cursor sass
+html{
+  cursor: default;
+}
 $secondary-color: #8cefe9;
 .cursor {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 1px solid #fff;
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-    z-index: 10000;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 10000;
+}
+
+.cursor2 {
+  z-index: 10000;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: $secondary-color;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-color: $secondary-color;
+  opacity: 0.3;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 0%;
+  height: 5px;
+  background: $secondary-color;
+  transition: all 100ms ease;
+}
+.to-top{
+  backdrop-filter: blur(4px);
+  background:white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width:700px){
+  .cursor,.cursor2{
+    display: none;
   }
-  
-  .cursor2 {
-      z-index: 10000;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: $secondary-color;
-    opacity: 0.3;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width 0.3s, height 0.3s, opacity 0.3s;
-  }
-  
-  .hover {
-    background-color: $secondary-color;
-    opacity: 0.3;
-  }
-  
-  .cursorinnerhover {
-    width: 50px;
-    height: 50px;
-    opacity: 0.5;
-  }
-  
-  
+}

@@ -235,4 +235,10 @@ body {
 .mabout p {
   font-size: .79rem;
 }
+
+.details {
+  padding: 5rem 0;
+  background: url("/imgs/dragon.png");
+  background-size: cover;
+}
 /*# sourceMappingURL=mobile.css.map */

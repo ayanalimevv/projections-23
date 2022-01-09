@@ -6,8 +6,10 @@
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
+  // left: 0;
   width: 100%;
   z-index: 1000;
+  justify-self: center;
 
     .navbar-brand{
       font-size: 1.5rem;

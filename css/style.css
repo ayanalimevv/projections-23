@@ -146,6 +146,7 @@ a {
   display: flex;
   height: 720px;
   width: 100%;
+  margin-top: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -211,7 +212,7 @@ a {
 }
 
 .hero-info .infoCard {
-  margin-top: 1rem;
+  margin-top: 5rem;
   border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
   background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1)));
   border-radius: var(--rd, 5px);
@@ -292,6 +293,8 @@ a {
   height: auto;
   margin-left: -8rem;
   margin-top: -10rem;
+  -webkit-animation: swing 5s ease infinite;
+          animation: swing 5s ease infinite;
 }
 
 .about-head {
@@ -309,6 +312,28 @@ a {
 
 .stats-div span {
   font-size: 5rem;
+}
+
+@-webkit-keyframes swing {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
 }
 
 .footfalls {

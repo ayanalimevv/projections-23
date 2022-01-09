@@ -8,6 +8,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .navbar .navbar-brand {

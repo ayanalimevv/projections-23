@@ -1,7 +1,11 @@
 //Main.js
-var cursor = document.querySelector('.cursor');
-var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('a');
+
+
+// Js for custom cursor
+let cursor = document.querySelector('.cursor');
+let cursorinner = document.querySelector('.cursor2');
+let a = document.querySelectorAll('a');
+let loadingDiv=document.querySelector(".loading-bar");
 
 document.addEventListener('mousemove', function(e){
   var x = e.clientX;
@@ -33,4 +37,17 @@ a.forEach(item => {
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');
   });
+})
+
+// Js for loading bar
+function getScrollPercent() {
+  var h = document.documentElement, 
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight';
+  return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+}
+window.addEventListener('scroll',()=>{
+  let a=getScrollPercent();
+  loadingDiv.style.width=`${a}%`;
 })
