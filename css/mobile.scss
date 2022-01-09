@@ -199,7 +199,13 @@ body {
 }
 
 .details{
-    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 3rem;
     background:url('/imgs/dragon.png');
     background-size: cover;
+}
+
+.numcount{
+    font-size: 4rem;
 }

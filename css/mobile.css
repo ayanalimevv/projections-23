@@ -237,8 +237,18 @@ body {
 }
 
 .details {
-  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 3rem;
   background: url("/imgs/dragon.png");
   background-size: cover;
+}
+
+.numcount {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=mobile.css.map */
