@@ -22,6 +22,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="js/gsap.js" defer></script>
+  <script defer>
+    if (screen.width <= 699) {
+    document.location = "mobile.html";
+  }
+  </script>
 </head>
 
 <body>
@@ -354,15 +359,7 @@
   </script>
 
 
-  <script>
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      window.location.href == "../mobile.html"
-    }
-    else {
-      window.location.href == "../index.html"
-    }
-  </script>
+  
 
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -400,7 +397,7 @@
     //   scrollTrigger:
     //   {
     //     trigger: "#about",
-    //     start:"top 80%",
+    //     start:"top 80%",s
     //     markers:true
     //   },
     //   x: "-120%",
