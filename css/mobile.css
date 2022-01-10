@@ -251,4 +251,9 @@ body {
 .numcount {
   font-size: 4rem;
 }
+
+.campusAmb .container .row .col .mca {
+  width: 10rem;
+  height: auto;
+}
 /*# sourceMappingURL=mobile.css.map */
