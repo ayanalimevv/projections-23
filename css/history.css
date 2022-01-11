@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
 :root{
     --bg-color:#0b1321;
@@ -10,13 +11,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Montserrat";
-}
+
 body{
     background-color: #131817;
     /* background: url(../imgs/history.png) no-repeat ;
     background-size: cover; */
+    font-family: "Poppins" , sans-serif;
 }
 .container {
   min-height: 100vh;
