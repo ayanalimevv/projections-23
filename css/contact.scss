@@ -93,3 +93,10 @@ body{
         width: 100%;
     }
 }
+
+@media screen and (min-width:360px) {
+
+.container-foot{
+        padding-left: 3rem;
+}
+}
