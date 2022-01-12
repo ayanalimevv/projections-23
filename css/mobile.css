@@ -252,8 +252,50 @@ body {
   font-size: 4rem;
 }
 
+.campusAmb {
+  margin-top: 3rem;
+}
+
+.campusAmb .container .row .mcampus {
+  padding: 2.5rem;
+}
+
 .campusAmb .container .row .col .mca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: -webkit-center;
+}
+
+.registerca {
+  height: 3.5rem;
   width: 10rem;
-  height: auto;
+  border-radius: 5rem;
+  background: #8cefe9;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.registerca:hover {
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=mobile.css.map */

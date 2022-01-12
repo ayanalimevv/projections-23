@@ -211,14 +211,44 @@ body {
 }
 
 .campusAmb{
+    margin-top: 3rem;
     .container{
         .row{
+            .mcampus{
+                padding: 2.5rem;
+            }
             .col{
                 .mca{
-                    width:10rem;
-                    height: auto;
+                    display: flex;
+                    width:20rem;
+                    height: max-content;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: -webkit-center;
+            
                 }
             }
         }
     }
 }
+
+
+.registerca {
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 5rem;
+    background: #8cefe9;
+    color: black;
+  
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover {
+      border: 2px solid $white;
+      background-color: #000;
+      color: #fff;
+    }
+  }
