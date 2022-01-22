@@ -191,7 +191,8 @@ a {
 }
 
 .hero-info .textInfo .explore {
-  height: 3.5rem;
+  margin: .5rem;
+  height: 3.2rem;
   width: 10rem;
   border-radius: 5rem;
   background-color: #8cefe9;
@@ -372,8 +373,8 @@ a {
   height: 3.5rem;
   width: 10rem;
   border-radius: 5rem;
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -385,7 +386,7 @@ a {
 }
 
 .registerca:hover {
-  border: 2px solid #fff;
+  border: 2px solid #000;
   background: #8cefe9;
   color: black;
 }

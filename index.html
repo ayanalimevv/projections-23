@@ -30,13 +30,14 @@
 </head>
 
 <body>
-  <div class="to-top"></div>
-  <div class="loading-bar"></div>
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
+ 
 
   <div class="main">
     <nav class="navbar navbar-expand-lg nav-light " style="width: inherit;">
+      <div class="to-top"></div>
+      <div class="loading-bar"></div>
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
       <div class="container">
         <a class="navbar-brand" href="index.html">Projections</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -386,7 +387,7 @@
     let explore = document.querySelector(".explore");
     gsap.from(head, 2, { opacity: 0, y: "-100%", delay: 1, ease: Power2.easeOut });
     gsap.from(para, 1, { opacity: 0, x: -20, delay: 2, ease: Power2.easeOut });
-    gsap.from(explore, 1, { opacity: 0, scale: 3, delay: 3, ease: Power2.easeOut });
+    gsap.from(explore, 1, { opacity: 0,x: -20, delay: 2, ease: Power2.easeOut });
     
     // function aboutAnime(){
     //   gsap.from(".about-head", { x: -200, opacity: 0,delay:1, duration: 1, ease: Power2.easeOut });

@@ -104,18 +104,10 @@ body {
   background-size: cover;
   color: white;
   font-family: 'Poppins', sans-serif;
-  -webkit-perspective-origin: 25rem;
-          perspective-origin: 25rem;
-  -webkit-perspective: 25em;
-          perspective: 25em;
-  -webkit-perspective-origin: 50% calc(50% - 3em);
-          perspective-origin: 50% calc(50% - 3em);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 body .main {
-  width: 1280px;
+  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,14 +118,13 @@ body .main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 #events {
-  width: 1280px;
-  padding: 2rem;
+  max-width: 1280px;
+  margin-top: -2rem;
+  padding: 0;
 }
 
 #events .main-div .main-head {

@@ -172,7 +172,8 @@ a {
     }
 
     .explore {
-      height: 3.5rem;
+      margin: .5rem;
+      height: 3.2rem;
       width: 10rem;
       border-radius: 5rem;
       background-color: #8cefe9;
@@ -323,8 +324,8 @@ a {
   height: 3.5rem;
   width: 10rem;
   border-radius: 5rem;
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: grid;
   place-items: center;
   text-align: center;
@@ -332,7 +333,7 @@ a {
   cursor: pointer;
   font-weight: 500;
   &:hover {
-    border: 2px solid $white;
+    border: 2px solid #000;
     background: #8cefe9;
     color: black;
   }

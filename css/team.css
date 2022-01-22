@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +21,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
   background: #0b1321;
 }
@@ -26,8 +34,8 @@ i {
 }
 
 .main-container {
-  margin-top: 8rem;
-  width: 1280px !important;
+  margin-top: 1rem;
+  max-width: 1280px !important;
 }
 
 .container {
@@ -43,7 +51,7 @@ i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 5px 0;
 }
 
 .container .card {
@@ -165,5 +173,6 @@ i {
 .team-head {
   text-align: center;
   color: #8cefe9;
+  margin: 0;
 }
 /*# sourceMappingURL=team.css.map */
