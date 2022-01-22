@@ -165,14 +165,37 @@ i {
   font-size: 24px;
 }
 
-.imgBx img {
-  width: 400px;
-  height: auto;
+.imgBx {
+  width: 300px;
+  height: 400px;
 }
 
 .team-head {
   text-align: center;
   color: #8cefe9;
   margin: 0;
+}
+
+.stf {
+  margin: 1rem 0;
+}
+
+.impcard {
+  border: 5px solid #8cefff !important;
+}
+
+.dhruvil-shah {
+  background: url(https://i.ibb.co/Hx6GvGN/Dhruvil-Shah.png) no-repeat center center;
+  background-size: contain;
+}
+
+.pujan-shah {
+  background: url(https://i.ibb.co/mXqg5ch/Pujan-Shah-1.png) no-repeat center center;
+  background-size: contain;
+}
+
+.jinay-shah {
+  background: url(https://i.ibb.co/mXqg5ch/Pujan-Shah-1.png) no-repeat center center;
+  background-size: contain;
 }
 /*# sourceMappingURL=team.css.map */
