@@ -60,7 +60,7 @@ body .main {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   padding: 2rem;
-  margin: 6rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
   -ms-flex-item-align: center;
       align-self: center;
 }

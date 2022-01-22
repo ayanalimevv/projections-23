@@ -184,10 +184,14 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-
     <script>
-        gsap.from(".timeline li", 1, { opacity: 0, x: "-100%",delay:1, stagger: 0.2 })
+      var tl = gsap.timeline();
+    tl.from(".form-div",1,{opacity:0, x:"-100%",ease:Power2.easeOut})
+    .from(".content *",1,{opacity:0, y:"-100%",stagger:0.2,ease:Power2.easeOut})
+    .from("form",1,{opacity:0, scale:2,ease:Power2.easeOut},"-=3")
+ 
     </script>
+ 
 </body>
 
 </html>
