@@ -33,13 +33,13 @@ body{
   
   background-size: contain;
   /* background-color: #111; */
-    margin-top: 7rem;
+    margin-top: 1rem;
 }
 .timeline {
   width: 80%;
   height: auto;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1rem auto;
   position: relative;
 }
 

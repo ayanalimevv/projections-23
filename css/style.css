@@ -373,7 +373,7 @@ a {
   height: 3.5rem;
   width: 10rem;
   border-radius: 5rem;
-  background-color: white;
+  background-color: #8cefe9;
   color: black;
   display: -ms-grid;
   display: grid;
@@ -387,7 +387,7 @@ a {
 
 .registerca:hover {
   border: 2px solid #000;
-  background: #8cefe9;
+  background: #fff;
   color: black;
 }
 
