@@ -7,6 +7,10 @@
     background-size: cover;
     backdrop-filter: blur(4px);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 

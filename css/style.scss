@@ -105,7 +105,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: #0b1321;
   color: white;
@@ -113,8 +115,8 @@ body {
   // background-color: #8CEFE9;
 
   .main {
-    width: 1280px;
-    height: fit-content;
+    max-width: 1280px;
+    height: auto;
   }
 }
 

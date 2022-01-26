@@ -1,16 +1,25 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
-  max-width: 1280px;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .container {
+  max-width: 1280px;
 }
 
 .navbar .navbar-brand {
