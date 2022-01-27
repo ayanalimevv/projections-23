@@ -86,8 +86,124 @@
 
   <div class="hero">
 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col main-info">
+
+          
+            <div class="textInfo">
+
+              <h1 class="hero-head">PROJECTIONS 2022</h1>
+              <h5 class="hero-para">
+                Gujarat's Largest Technical Fest
+              </h5>
+               <h2 class="date">3rd & 4th March</h2>
+              <a href="events.html" class="explore">
+               
+                  Register Now
+          
+              </a>
+
+            </div>
+
+            
+        
+        </div>
+      </div>
+    </div>
+    <div class="footer-icons-home">
+
+               
+      <a href="https://www.facebook.com/PUProjections/" target="_blank"><i
+          class="fab fa-facebook-square"></i></a> <br>
+      <a href="hhttps://www.instagram.com/puprojections/" target="_blank"><i class="fab fa-instagram-square"></i></a><br>
+      <a href="ttps://twitter.com/ProjectionsPu" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
   </div>
 
+<a href="ca.html" class="explore" id="ca">
+  Campus Ambassador
+</a>
+
+
+  
+  </div>
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="stats-div">
+            <span class="autoCounter">17+ </span>
+            <p>Years Of Successfully Celebartion</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="stats-div">
+            <span class="autoCounter">50+ </span>
+            <p>Events</p>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="stats-div"><span class="footfalls autoCounter">30000+</span>
+              <p> Foot-Falls</p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="stats-div">
+              <span class="autoCounter">7000+</span>
+              <p> Participants</p>
+            </div>
+        </div>
+
+      </div>
+      <div class="row" style="margin-top:5rem;">
+        <div class="col" style="padding: 5rem;">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zTxiJJ6Y-n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col">
+          <h1 class="about-head">About Us</h1>
+          <p class="about-para">Projections is an International Technical Fest which is being organized in Parul
+            University
+            with more than
+            45+ different technical,non-technical, special event, workshops, guest lectures being
+            organized. With more
+            than 7000 participants and 15000 viewers last year, Projections is the largest technical
+            festival in
+            Gujarat. Projections’20 honored the motherland by thanking the unmatched hard work and
+            dedication of
+            scientists at ISRO by campaigning with the tagline: Taking a Billion Dreams to Space. This
+            year Projections
+            is going to be organized in the midweek of February and the theme is Technoverse , a unique
+            combination of
+            all the technologies and the universe they lie within.
+          </p>
+        </div>
+      </div>
+
+  
+
+    </div>
+
+  </section>
+
+
+
+  <section class="testimonial">
+    <div class="container">
+      
+</div>
+  </section>
 
 
 
@@ -193,16 +309,18 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-
+<script src="js/gsap.js"></script>
     <script>
       // Gsap
     let navbar = document.querySelector(".navbar");
     let head = document.querySelector(".hero-head");
     let para = document.querySelector(".hero-para");
+    let date = document.querySelector(".date");
     let explore = document.querySelector(".explore");
     gsap.from(head, 2, { opacity: 0, y: "-100%", delay: 1, ease: Power2.easeOut });
     gsap.from(para, 1, { opacity: 0, x: -20, delay: 2, ease: Power2.easeOut });
     gsap.from(explore, 1, { opacity: 0,x: -20, delay: 2, ease: Power2.easeOut });
+    gsap.from(date, 2, { opacity: 0,x: -20, delay: 2, ease: Power2.easeOut });
     
     // function aboutAnime(){
     //   gsap.from(".about-head", { x: -200, opacity: 0,delay:1, duration: 1, ease: Power2.easeOut });
