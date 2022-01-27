@@ -126,8 +126,9 @@ section {
 }
 
 .hero {
-  height: 720px;
+  height: 100vh;
   padding: 0;
+  width: 100%;
   background: url(../imgs/hero-bg.png) no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -255,7 +256,7 @@ a {
   background: linear-gradient(180deg, #0b1321, #0b1321);
   // background: url(../imgs/dragon.png) no-repeat center center;
   background-size: cover;
-  padding: 10rem 8rem;
+  padding: 5rem 8rem;
 }
 
 .aboutUs {
