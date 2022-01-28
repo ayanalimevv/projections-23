@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 $bg-color: #0b1321;
@@ -103,198 +104,83 @@ a {
   --shc-mutated-brightness: 26, 31, 39;
 }
 
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #0b1321;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  // background-color: #8CEFE9;
-}
-
-// Sass for all sections
-section {
-  padding: 6rem 3rem;
-}
-
-.hero{
-    height: 100vh;
-    width: 100%;
-    background: url(../imgs/hero-bg.png) no-repeat center center;
-    background-size: cover;
-    position: sticky;
-    top:0;
-    z-index: 111;
-
-}
-
-
-   
-  .explore {
-    margin: .5rem;
-    text-decoration: none!important;
-    margin-left: 0;
-    height: 3.2rem;
-    width: 10rem;
-    border-radius: 5rem;
-    background-color: #8cefe9;
-    color: #000;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    transition: 0.2s ease-out;
-    cursor: pointer;
-    font-weight: 400;
-    &:hover {
-      border: 2px solid $white;
-      background: transparent;
-      color: white;
-    }
-  }
-
-.main-info{
-  height: 100vh;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-  position: relative;
-
-  h1 {
-    color: #8cefe9;
-  }
-
-  p {
-    color: gray;
-    width: 100%;
-    font-family: "Questrial", sans-serif;
-  }
-}
-
- #ca {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  margin: .5rem;
-  height: 3.2rem;
-  font-weight: bold;
-  width: fit-content;
-  padding: .5rem 1rem;
-  border-radius: 5rem;
-  background-color: #8cefe9;
-  color: #000;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  transition: 0.2s ease-out;
-  cursor: pointer;
-  font-weight: 400;
-  &:hover {
-    border: 2px solid $white;
-    background: transparent;
-    color: white;
-  }
-}
-
-
-.footer-icons-home{
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  a{
-    margin: 1.5rem 1rem;
-  }
-}
-
-
-
-
-
-.about {
-  height: min-content;
-  background: linear-gradient(180deg, #0b1321, #0b1321);
-  // background: url(../imgs/dragon.png) no-repeat center center;
-  background-size: cover;
-  padding: 5rem 8rem;
-  position: sticky;
-  top:0;
-  z-index: 222;
-}
-
-.aboutUs {
-  h1 {
-    color: #8cefe9;
-    font-weight: bold;
-    font-size: 3.5rem;
-  }
-}
-.about-sub{
-  color: #8b95a6;
-}
-.tabAni {
-  width: 150%;
-  height: auto;
-  margin-left: -8rem;
-  margin-top: -10rem;
-  animation: swing 5s ease infinite;
-}
-.about-head {
-  font-size: 4rem;
-  color: #8cefe9;
-}
-.about-para {
-  margin-top: .5rem;
-  line-height: 2;
-}
-.stats-div {
-  text-align: center;
-  p {
-    font-size: 1.2rem;
-  }
-  span {
-    font-size: 5rem;
-  }
-}
-@keyframes swing {
-  0%,100%{
-    transform: translateY(0);
-  }
-  50%{
-    transform:translateY(-50px);
-  }
-}
-
-.footfalls {
-  font-size: 5.5rem;
-  color: #8cefe9;
-  transition: ease-in-out;
-
-  &:hover {
-    transform: translateY(-10deg);
-  }
-}
-
-
-
-
-.tab-video {
-  transform: translateX(1rem) translateY(2rem);
-}
-
-.opt-menu{
-  margin-top: 3rem;
-  .col{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    background-color: #0b1321;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    // background-color: #8CEFE9;
+}
+section {
+    padding: 6rem 3rem;
   }
+
+  .title{
+      text-align: center;
+      color: $secondary-color;
+  }
+
+  .tech-events{
+      margin-top: 1rem;
+  }
+.row{
+    margin: 3rem 0;
+   
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  .card {
+    border-radius: 0.8rem;
+    border: none;
+    // width: 18rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    // color: white;
+    padding: 1rem;
+  }
+
+  .btn-register{
+      background-color: $secondary-color!important;
+      color: #000;
+      font-weight: 400;
+      border: 2px solid $secondary-color;
+      width: 100%;
+      margin-bottom: .5rem;
+
+      &:hover{
+          background-color: transparent!important;
+          color: #fff;
+          
+      }
+  }
+
+  .btn-secondary{
+    background-color: transparent!important;
+    color: #fff;
+    font-weight: 400;
+    border: 2px solid $secondary-color;
+    width: 100%;
+    margin-bottom: .5rem;
+
+    &:hover{
+        background-color: $secondary-color!important;
+        color: #000;
+    }
 }
