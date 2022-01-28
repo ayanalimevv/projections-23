@@ -136,16 +136,17 @@ section {
 
   .tech-events{
       margin-top: 1rem;
-  }
-.row{
-    margin: 3rem 0;
-   
-    .col{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .row{
+        margin: 3rem 0;
+       
+        .col{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
-}
+  }
+
   .card {
     border-radius: 0.8rem;
     border: none;

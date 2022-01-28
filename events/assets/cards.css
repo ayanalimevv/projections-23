@@ -139,11 +139,11 @@ section {
   margin-top: 1rem;
 }
 
-.row {
+.tech-events .row {
   margin: 3rem 0;
 }
 
-.row .col {
+.tech-events .row .col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
