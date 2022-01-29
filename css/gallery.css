@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #0b1321;
+}
+
+.header {
+  text-align: center;
+  background-image: url("https://digitalforge.qa/images/codepen/grange-pattern.png");
+  background-color: #f3f3f3;
+  padding: 32px;
+  border-bottom: 2px solid #222;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 15px;
+  margin-top: 81.6px;
+}
+
+.column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 2rem .5rem;
+}
+
+.column #size {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+}
+
+.column img {
+  opacity: 0.7;
+}
+
+.column img:hover {
+  -webkit-transform: scale(0.98) translateX(-5px) translateY(-5px);
+          transform: scale(0.98) translateX(-5px) translateY(-5px);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+$bg-color: #0b1321;
+$secondary-color: #8cefe9;
+$para-color: #8b95a6;
+$white: #fff;
+$black: #000;
+$main-font: "Poppins";
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+html{
+    cursor: none;
+    a{
+        &:hover{
+            cursor: none;
+        }
+    }
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color_0: 255, 255, 255;
+  --color_27: 60, 67, 147;
+  --color_1: 255, 255, 255;
+  --color_2: 0, 0, 0;
+  --color_3: 237, 28, 36;
+  --color_4: 0, 136, 203;
+  --color_5: 255, 203, 5;
+  --color_6: 114, 114, 114;
+  --color_7: 176, 176, 176;
+  --color_8: 255, 255, 255;
+  --color_28: 90, 100, 220;
+  --color_9: 114, 114, 114;
+  --color_10: 176, 176, 176;
+  --color_11: 0, 0, 0;
+  --color_12: 153, 153, 151;
+  --color_13: 199, 199, 199;
+  --color_14: 232, 230, 230;
+  --color_15: 255, 255, 255;
+  --color_16: 70, 119, 116;
+  --color_17: 105, 179, 175;
+  --color_18: 140, 239, 233;
+  --color_29: 163, 168, 232;
+  --color_19: 196, 247, 244;
+  --color_20: 225, 247, 246;
+  --color_21: 11, 19, 33;
+  --color_22: 52, 61, 77;
+  --color_23: 95, 105, 122;
+  --color_24: 139, 149, 166;
+  --color_25: 183, 193, 211;
+  --color_30: 195, 199, 243;
+  --color_31: 73, 30, 66;
+  --color_32: 147, 60, 132;
+  --color_33: 220, 90, 198;
+  --color_34: 232, 163, 220;
+  --color_35: 243, 195, 235;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1321;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  // background-color: #8CEFE9;
+}
+
+// Sass for all sections
+section {
+  padding: 6rem 3rem;
+}
+
+.campusamb{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: $secondary-color;
+    }
+}
