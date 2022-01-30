@@ -109,3 +109,8 @@ transform: scale(1.2) rotate(360deg);
     }
   
   }
+
+  .link-color{
+    color: #8cefe9!important;
+    color: #000;
+  }
