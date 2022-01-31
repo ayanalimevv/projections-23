@@ -12,7 +12,6 @@ body {
 
 .header {
   text-align: center;
-  background-image: url("https://digitalforge.qa/images/codepen/grange-pattern.png");
   background-color: #f3f3f3;
   padding: 32px;
   border-bottom: 2px solid #222;
@@ -25,7 +24,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 15px;
-  margin-top: 81.6px;
+  margin: 5rem 0 10rem 0;
 }
 
 .column {

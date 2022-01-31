@@ -220,7 +220,7 @@ section {
 .about {
   height: min-content;
   background: linear-gradient(180deg, #0b1321, #0b1321);
-  // background: url(../imgs/dragon.png) no-repeat center center;
+  // background-image: url("../imgs/aboutUs.jpg");
   background-size: cover;
   padding: 5rem 8rem;
   position: sticky;
@@ -229,6 +229,7 @@ section {
 }
 
 .aboutUs {
+  
   h1 {
     color: #8cefe9;
     font-weight: bold;
@@ -297,4 +298,8 @@ section {
     align-items: center;
     text-align: center;
   }
+}
+
+.events{
+  
 }

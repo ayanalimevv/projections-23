@@ -86,6 +86,7 @@ body {
   background-color: #0b1321;
   color: white;
   font-family: "Poppins", sans-serif;
+  background-size: cover;
 }
 
 section {
@@ -93,7 +94,7 @@ section {
 }
 
 .campusamb {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,9 +108,48 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 8rem;
 }
 
 .campusamb h1 {
   color: #8cefe9;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #8cefe9;
+  margin-bottom: .5rem;
+}
+
+p {
+  padding: .5rem 0;
+}
+
+.joinnow {
+  margin: .5rem;
+  text-decoration: none !important;
+  margin-left: 0;
+  height: 3.2rem;
+  width: 10rem;
+  border-radius: 5rem;
+  background-color: #8cefe9;
+  color: #000;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.joinnow:hover {
+  border: 2px solid #fff;
+  background: transparent;
+  color: white;
 }
 /*# sourceMappingURL=ca.css.map */
