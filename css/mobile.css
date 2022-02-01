@@ -244,7 +244,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5rem 3rem;
-  background: url("/imgs/dragon.png");
   background-size: cover;
 }
 
