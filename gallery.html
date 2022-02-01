@@ -298,7 +298,9 @@
           integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
         <script>
-          let col0 = document.getElementsByClassName('column')[0];
+
+if (screen.width >= 699) {
+      let col0 = document.getElementsByClassName('column')[0];
           let col1 = document.getElementsByClassName('column')[1];
           let col2 = document.getElementsByClassName('column')[2];
           let col3 = document.getElementsByClassName('column')[3];
@@ -308,7 +310,9 @@
           .from(col1, 1, { opacity: 0, y: "-100%" })
           .from(col2, 1, { opacity: 0, y: "100%" })
           .from(col3,1,{opacity:0,x:"100%"})
-        </script>
+    }
+          
+</script>
 
  
 </body>
