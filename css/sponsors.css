@@ -1,0 +1,218 @@
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(../imgs/dragon.png);
+}
+
+.carousel {
+  margin-top: 9rem;
+  margin-bottom: 4rem;
+}
+
+.carousel-cell:nth-child(1) .img {
+  background: url(../logos/1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(2) .img {
+  background: url(../logos/2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(3) .img {
+  background: url(../logos/3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(4) .img {
+  background: url(../logos/4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(5) .img {
+  background: url(../logos/5.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(6) .img {
+  background: url(../logos/6.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(7) .img {
+  background: url(../logos/7.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(8) .img {
+  background: url(../logos/8.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(9) .img {
+  background: url(../logos/9.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(10) .img {
+  background: url(../logos/10.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(11) .img {
+  background: url(../logos/11.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(12) .img {
+  background: url(../logos/12.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(13) .img {
+  background: url(../logos/13.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(14) .img {
+  background: url(../logos/14.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(15) .img {
+  background: url(../logos/15.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(16) .img {
+  background: url(../logos/16.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(17) .img {
+  background: url(../logos/17.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(18) .img {
+  background: url(../logos/18.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(19) .img {
+  background: url(../logos/19.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(20) .img {
+  background: url(../logos/20.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(21) .img {
+  background: url(../logos/21.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(22) .img {
+  background: url(../logos/22.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(23) .img {
+  background: url(../logos/23.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(24) .img {
+  background: url(../logos/24.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(25) .img {
+  background: url(../logos/25.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(26) .img {
+  background: url(../logos/26.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(27) .img {
+  background: url(../logos/27.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(28) .img {
+  background: url(../logos/28.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(29) .img {
+  background: url(../logos/29.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(30) .img {
+  background: url(../logos/30.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell:nth-child(31) .img {
+  background: url(../logos/31.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 66.6%;
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 1.4rem;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 0.4rem;
+}
+
+.carousel-cell:hover .img {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.carousel-cell .img {
+  width: 69%;
+  height: 75%;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+  .carousel-cell {
+    width: 100%;
+  }
+  .carousel-cell .img {
+    height: 39%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=sponsors.css.map */
