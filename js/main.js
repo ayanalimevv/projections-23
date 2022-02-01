@@ -51,3 +51,14 @@ window.addEventListener('scroll',()=>{
   let a=getScrollPercent();
   loadingDiv.style.width=`${a}%`;
 })
+
+let whatsapp = document.getElementById("whatsapp")
+
+window.addEventListener('scroll',()=>{
+  if(window.scrollY===0){
+    whatsapp.style.display="none";
+  }
+  else{
+    whatsapp.style.display="flex";
+  }
+})

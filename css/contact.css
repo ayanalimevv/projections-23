@@ -145,4 +145,14 @@ body .main {
     padding-left: 3rem;
   }
 }
+
+.contact-submit {
+  background-color: #8CEFE9 !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+.contact-submit:hover {
+  color: #fff !important;
+}
 /*# sourceMappingURL=contact.css.map */

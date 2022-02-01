@@ -102,3 +102,15 @@ body{
         padding-left: 3rem;
 }
 }
+
+.contact-submit {
+    background-color: #8CEFE9!important;
+    color: rgb(0, 0, 0)!important;
+    font-weight: 500!important;
+
+    &:hover{
+        color: #fff!important;
+        
+    }
+
+}

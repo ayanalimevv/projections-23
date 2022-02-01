@@ -220,8 +220,8 @@ section {
 .about {
   height: min-content;
   background: linear-gradient(180deg, #0b1321, #0b1321);
-  // background-image: url("../imgs/aboutUs.jpg");
-  background-size: cover;
+  background: url("../imgs/aboutUsbg.png") no-repeat center center ;
+  background-size: contain;
   padding: 5rem 8rem;
   position: sticky;
   top:0;
@@ -300,6 +300,42 @@ section {
   }
 }
 
-.events{
-  
+.testimonial {
+  h1{
+    text-align: center;
+    color: #8cefe9;
+    margin-bottom: 1rem;
+  }
+  overflow: hidden;
+  .container {
+    display: flex;
+    animation: slide 16s linear infinite;
+  }
+  .testimonial-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    background-color: rgba($color: #000000, $alpha: 0.25);
+    backdrop-filter: blur(4px);
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    border-radius: 6px;
+    h5 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.6rem;
+      opacity:0.4;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }

@@ -237,7 +237,8 @@ section {
   height: min-content;
   background: -webkit-gradient(linear, left top, left bottom, from(#0b1321), to(#0b1321));
   background: linear-gradient(180deg, #0b1321, #0b1321);
-  background-size: cover;
+  background: url("../imgs/aboutUsbg.png") no-repeat center center;
+  background-size: contain;
   padding: 5rem 8rem;
   position: -webkit-sticky;
   position: sticky;
@@ -344,5 +345,73 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.testimonial {
+  overflow: hidden;
+}
+
+.testimonial h1 {
+  text-align: center;
+  color: #8cefe9;
+  margin-bottom: 1rem;
+}
+
+.testimonial .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: slide 16s linear infinite;
+          animation: slide 16s linear infinite;
+}
+
+.testimonial .testimonial-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 1rem 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.testimonial .testimonial-div h5 {
+  font-size: 1rem;
+}
+
+.testimonial .testimonial-div p {
+  font-size: 0.6rem;
+  opacity: 0.4;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
