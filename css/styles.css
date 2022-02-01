@@ -357,7 +357,7 @@ section {
   margin-bottom: 1rem;
 }
 
-.testimonial .container {
+.testimonial .containerss {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,11 +369,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 1rem;
+  margin: 1rem;
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -382,6 +378,14 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 6px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15rem !important;
 }
 
 .testimonial .testimonial-div h5 {

@@ -62,3 +62,9 @@ window.addEventListener('scroll',()=>{
     whatsapp.style.display="flex";
   }
 })
+
+let totop = document.getElementsByClassName("totop")[0]
+
+totop.addEventListener('click',()=>{
+  window.scrollTo(0, 0);
+})
