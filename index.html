@@ -12,10 +12,13 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/hevents.css">
+  
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/scrollbar.css">
   <link rel="stylesheet" href="css/cursor.css">
+  <!-- <link rel="stylesheet" href="css/loading.css"> -->
+  
   <!-- <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" sizes="100x100"> -->
 
 
@@ -29,9 +32,13 @@
     document.location = "mobile.html";
   }
   </script>
+
 </head>
 
-<body>
+<body oncontextmenu="return false">
+
+
+
 
   <div class="whatsapp" id="whatsapp">
     <a href="https://api.whatsapp.com/send/?phone=%2B918128650030&text=I%20have%20a%20query%20about: ">
@@ -186,7 +193,7 @@
 
       </div>
       <div class="row" style="margin-top:5rem;">
-        <div class="col tab" style="padding: 5rem;">
+        <div class="col tab">
           <iframe class="glimpse" src="https://www.youtube.com/embed/-l1cmnQ1E5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       
@@ -414,14 +421,14 @@
           </div>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your Name" class="name" id="name">
+            <input type="text" placeholder="Enter your Name" class="name" id="name" name="name">
             <label for="number">Number</label>
-            <input type="number" placeholder="+XX XXXXXXXXXX" class="number" id="number">
+            <input type="number" placeholder="+XX XXXXXXXXXX" class="number" id="number" name="number">
          
           </div>
           <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="email" placeholder="Enter your Email" id="email" aria-describedby="emailHelp">
+            <input name="email" type="email" class="email" placeholder="Enter your Email" id="email" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="message">Message</label>

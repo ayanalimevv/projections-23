@@ -216,15 +216,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 20rem;
   padding: 1rem;
   text-align: center;
+  position: relative;
 }
 
 .mabout .tab {
-  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .mabout h3 {
@@ -249,31 +263,6 @@ body {
 
 .numcount {
   font-size: 4rem;
-}
-
-.campusAmb {
-  margin-top: 3rem;
-}
-
-.campusAmb .container .row .mcampus {
-  padding: 2.5rem;
-}
-
-.campusAmb .container .row .col .mca {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20rem;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: -webkit-center;
 }
 
 .registerca {
@@ -369,5 +358,14 @@ body {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
+}
+
+.glimpse {
+  display: block;
+  width: 100%;
+  content: '';
+  height: 200px;
+  border: 2px solid #fff;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=mobile.css.map */

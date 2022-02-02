@@ -181,13 +181,18 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: max-content;
     width: 20rem;
     padding: 1rem;
     text-align: center;
+    position: relative;
     .tab{
-        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        height: max-content;
+
     }
     h3{
         margin-top: 2rem;
@@ -210,27 +215,6 @@ body {
     font-size: 4rem;
 }
 
-.campusAmb{
-    margin-top: 3rem;
-    .container{
-        .row{
-            .mcampus{
-                padding: 2.5rem;
-            }
-            .col{
-                .mca{
-                    display: flex;
-                    width:20rem;
-                    height: max-content;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: -webkit-center;
-            
-                }
-            }
-        }
-    }
-}
 
 
 .registerca {
@@ -294,4 +278,15 @@ body {
         transform: translateX(-100%);
       }
     }
+  }
+
+
+  .glimpse{
+    display: block;
+    width: 100%;
+
+    content: '';
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 1rem;
   }
