@@ -14,17 +14,22 @@ $main-font: "Poppins";
   box-sizing: border-box;
   text-decoration: none;
 }
-html{
-    cursor: none;
-    a{
-        &:hover{
-            cursor: none;
-        }
+html {
+  cursor: none;
+  .overflow-hidden {
+    height: 100vh;
+    overflow: none;
+  }
+  a {
+    &:hover {
+      cursor: none;
     }
+  }
 }
 a {
   text-decoration: none;
 }
+
 :root {
   --color_0: 255, 255, 255;
   --color_27: 60, 67, 147;
@@ -175,7 +180,7 @@ a {
     }
 
     .explore {
-      margin: .5rem;
+      margin: 0.5rem;
       height: 3.2rem;
       width: 10rem;
       border-radius: 5rem;
@@ -289,11 +294,12 @@ a {
   }
 }
 @keyframes swing {
-  0%,100%{
+  0%,
+  100% {
     transform: translateY(0);
   }
-  50%{
-    transform:translateY(-50px);
+  50% {
+    transform: translateY(-50px);
   }
 }
 .footfalls {
@@ -337,7 +343,7 @@ a {
   font-weight: 500;
   &:hover {
     border: 2px solid #000;
-    background: #fff ;
+    background: #fff;
     color: black;
   }
 }

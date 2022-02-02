@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/scrollbar.css">
   <link rel="stylesheet" href="css/cursor.css">
-  <!-- <link rel="stylesheet" href="css/loading.css"> -->
+  <link rel="stylesheet" href="css/loading.css">
   
   <!-- <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" sizes="100x100"> -->
 
@@ -33,10 +33,20 @@
   }
   </script>
 
+
 </head>
 
-<body oncontextmenu="return false">
+<body >
+<!-- <body oncontextmenu="return false"> -->
 
+  <div class="loading-divv">
+    <div class="loading-barr"></div>
+    <div class="svg-div"></div>
+    <div class="loading-count">
+     <h1 class="countss" id="countss"> </h1>
+    </div>
+
+</div>
 
 
 
@@ -505,8 +515,8 @@
   
 
   <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -520,6 +530,32 @@
     crossorigin="anonymous"></script>
 
 <script src="js/gsap.js"></script>
+    <script>
+    gsap.to(".loading-barr",5,{width:"100%"})
+    gsap.to(".loading-divv",1,{x:"-100%",delay:6})
+
+    let html = document.getElementById("html")
+   
+    let count=document.querySelector(".countss");
+    let loadingDivv=document.querySelector(".loading-divv");
+
+    let i=0;
+    let countInt=setInterval(()=>{
+        count.innerText=`${i}`;
+        i<100?i++:clearInterval(countInt);
+    },50);
+
+    setTimeout(()=>{
+        count.innerText=`Projections'22`;
+        count.style.color="#8cefe9";
+    },5500);
+    setTimeout(()=>{
+        loadingDivv.style.display="none";
+
+        html.style.overflow = "scroll"
+        
+    },6500);
+    </script>
     <script>
       // Gsap
     let navbar = document.querySelector(".navbar");

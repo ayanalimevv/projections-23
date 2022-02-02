@@ -14,6 +14,11 @@ html {
   cursor: none;
 }
 
+html .overflow-hidden {
+  height: 100vh;
+  overflow: none;
+}
+
 html a:hover {
   cursor: none;
 }
@@ -198,7 +203,7 @@ a {
 }
 
 .hero-info .textInfo .explore {
-  margin: .5rem;
+  margin: 0.5rem;
   height: 3.2rem;
   width: 10rem;
   border-radius: 5rem;
@@ -324,7 +329,8 @@ a {
 }
 
 @-webkit-keyframes swing {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -335,7 +341,8 @@ a {
 }
 
 @keyframes swing {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
