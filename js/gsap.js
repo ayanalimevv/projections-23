@@ -1,6 +1,4 @@
-let relPos="20px";
-
-autoCounter = document.getElementsByClassName("autoCounter")
+let autoCounter = document.getElementsByClassName("autoCounter")
 
 let span1 = autoCounter[0];
 let span2 = autoCounter[1];
@@ -21,7 +19,7 @@ var checkCounter = true;
 gsap.registerPlugin(ScrollTrigger);
 gsap.from(".about-head", { x: -100, opacity: 0, duration: 1, ease: Power2.easeOut });
 gsap.from(".about-para", { y: -100, opacity: 0, duration: 1, delay: 1, ease: Power2.easeOut });
-let animation=gsap.from(".trigger", {
+gsap.from(".trigger", {
     scrollTrigger:
     {
         trigger: ".stats-div",
@@ -35,7 +33,7 @@ let animation=gsap.from(".trigger", {
             checkCounter = false
             
         },
-        start: `${relPos} 80%`
+        start: `20px 80%`
         
        
     },

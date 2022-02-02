@@ -421,7 +421,16 @@ section {
 }
 
 .tab {
-  background: url("../imgs/tab.png") no-repeat center center;
   background-size: cover;
+}
+
+.glimpse {
+  display: block;
+  width: 440px;
+  margin-left: -3rem;
+  content: '';
+  height: 350px;
+  border: 2px solid #fff;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
