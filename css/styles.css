@@ -361,8 +361,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: slide 16s linear infinite;
-          animation: slide 16s linear infinite;
+  -webkit-animation: slide 16s linear  infinite;
+          animation: slide 16s linear  infinite;
 }
 
 .testimonial .testimonial-div {
@@ -393,8 +393,9 @@ section {
 }
 
 .testimonial .testimonial-div p {
-  font-size: 0.6rem;
-  opacity: 0.4;
+  color: #8cefe9;
+  font-size: .8rem;
+  opacity: 1;
 }
 
 @-webkit-keyframes slide {
@@ -417,5 +418,10 @@ section {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
+}
+
+.tab {
+  background: url("../imgs/tab.png") no-repeat center center;
+  background-size: cover;
 }
 /*# sourceMappingURL=styles.css.map */

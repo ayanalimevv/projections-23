@@ -309,7 +309,7 @@ section {
   overflow: hidden;
   .containerss {
     display: flex;
-    animation: slide 16s linear infinite;
+    animation: slide 16s linear  infinite;
   }
   .testimonial-div {
     display: flex;
@@ -326,8 +326,9 @@ section {
       font-size: 1rem;
     }
     p {
-      font-size: 0.6rem;
-      opacity:0.4;
+      color: #8cefe9;
+      font-size: .8rem;
+      opacity:1;
     }
   }
 
@@ -340,4 +341,9 @@ section {
       transform: translateX(-100%);
     }
   }
+}
+
+.tab{
+  background:url("../imgs/tab.png") no-repeat center center;
+  background-size: cover;
 }

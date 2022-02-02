@@ -29,8 +29,8 @@ let animation=gsap.from(".trigger", {
             if(checkCounter){
             counter(span1, 17);
             counter(span2, 50);
-            counter(span3, 30000);
-            counter(span4, 7000);
+            counter(span3, 35000);
+            counter(span4, 8000);
             }
             checkCounter = false
             
