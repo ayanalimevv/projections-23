@@ -181,7 +181,7 @@ i {
 }
 
 .impcard {
-  border: 1px solid #8cefff !important;
+  border: 2px solid #8cefff !important;
 }
 
 .dhruvil-shah {
@@ -280,7 +280,12 @@ i {
 }
 
 .ayan-ali {
-  background: url(https://i.ibb.co/YbGzL8z/Ayan-Ali.png) no-repeat center center;
+  background: url(https://i.ibb.co/0YR52Ht/Ayan-Ali.png) no-repeat center center;
+  background-size: contain;
+}
+
+.krutik {
+  background: url(https://i.ibb.co/MGSGhnG/Krutik-Raut-2.png) no-repeat center center;
   background-size: contain;
 }
 

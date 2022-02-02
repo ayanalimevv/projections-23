@@ -60,6 +60,12 @@ body{
     border-radius: 1rem;
     margin-bottom:0.7rem;
 }
+.timeline ul li img{
+  height: 14rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom:0.7rem;
+}
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
