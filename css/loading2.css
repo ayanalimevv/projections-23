@@ -67,9 +67,14 @@ html {
   font-family: 'Poppins';
 }
 
+.loading-divv .countss {
+  -webkit-animation: big 5s linear;
+          animation: big 5s linear;
+}
+
 .loading-divv .svg-div {
-  height: 150px;
-  width: 150px;
+  height: 67.43px;
+  width: 206px;
   z-index: 99;
   position: absolute;
   display: -webkit-box;
@@ -85,7 +90,27 @@ html {
           animation: carslide 5s linear 1;
 }
 
+@-webkit-keyframes big {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 6rem;
+  }
+}
+
+@keyframes big {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 6rem;
+  }
+}
+
 @-webkit-keyframes trans {
+  from {
+  }
   to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -93,6 +118,8 @@ html {
 }
 
 @keyframes trans {
+  from {
+  }
   to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -102,46 +129,46 @@ html {
 @-webkit-keyframes carslide {
   0% {
     left: 0vw;
-    background-image: url(../svg/Asset4.svg);
+    background-image: url(../svg/tesla.svg);
   }
   25% {
     left: 25vw;
-    background-image: url(../svg/Asset3.svg);
+    background-image: url(../svg/tesla.svg);
   }
   50% {
     left: 50vw;
-    background-image: url(../svg/Asset1.svg);
+    background-image: url(../svg/tesla.svg);
   }
   75% {
     left: 75vw;
-    background-image: url(../svg/Asset2.svg);
+    background-image: url(../svg/tesla.svg);
   }
   100% {
     left: 100vw;
-    background-image: url(../svg/Asset2.svg);
+    background-image: url(../svg/tesla.svg);
   }
 }
 
 @keyframes carslide {
   0% {
     left: 0vw;
-    background-image: url(../svg/Asset4.svg);
+    background-image: url(../svg/tesla.svg);
   }
   25% {
     left: 25vw;
-    background-image: url(../svg/Asset3.svg);
+    background-image: url(../svg/tesla.svg);
   }
   50% {
     left: 50vw;
-    background-image: url(../svg/Asset1.svg);
+    background-image: url(../svg/tesla.svg);
   }
   75% {
     left: 75vw;
-    background-image: url(../svg/Asset2.svg);
+    background-image: url(../svg/tesla.svg);
   }
   100% {
     left: 100vw;
-    background-image: url(../svg/Asset2.svg);
+    background-image: url(../svg/tesla.svg);
   }
 }
 
