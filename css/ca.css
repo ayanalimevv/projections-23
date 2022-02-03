@@ -154,6 +154,18 @@ p {
 }
 
 .imgca {
-  border: 2px solid #fff;
+  height: 10rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 1000px) {
+  .imgca {
+    height: 20rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 /*# sourceMappingURL=ca.css.map */

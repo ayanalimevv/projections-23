@@ -134,5 +134,14 @@ p{
 }
 
 .imgca{
-  border: 2px solid #fff;
+   height: 10rem;
+   width: fit-content;
+}
+
+@media only screen 
+   and (min-width : 1000px) {
+    .imgca{
+      height: 20rem;
+      width: fit-content;
+   }
 }
