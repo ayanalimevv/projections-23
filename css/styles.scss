@@ -309,7 +309,7 @@ section {
   overflow: hidden;
   .containerss {
     display: flex;
-    animation: slide 16s linear  infinite;
+    animation: slide 12s linear  infinite;
   }
   .testimonial-div {
     display: flex;
@@ -338,7 +338,7 @@ section {
     }
 
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-30%);
     }
   }
 }
