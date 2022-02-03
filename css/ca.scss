@@ -159,13 +159,27 @@ p{
 }
 
 @media only screen 
-   and (min-width : 1000px) {
+   and (min-width : 700px) {
     .imgca{
       height: 20rem;
       width: fit-content;
    }
+  
 }
+
+@media only screen 
+   and (max-width : 320px) {
+   .caimg{
+     height: 12rem;
+   }
+   .campus-info{
+     padding: 0;
+     text-align: center;
+   }
+}
+
 
 .campus-info::-webkit-scrollbar {
   display: none;
+
 }
