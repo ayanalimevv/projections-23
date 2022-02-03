@@ -93,7 +93,7 @@ body {
   place-content: space-around;
   -webkit-box-pack: center;
   place-items: center;
-  background-color: #0b1321;
+  background-color: #0b1321 !important;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -226,6 +226,7 @@ body {
   padding: 1rem;
   text-align: center;
   position: relative;
+  background-color: #0b1321 !important;
 }
 
 .mabout .tab {
@@ -261,7 +262,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5rem 3rem;
-  background-size: cover;
+  background-color: #0b1321 !important;
 }
 
 .numcount {
