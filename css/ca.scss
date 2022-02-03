@@ -133,6 +133,26 @@ p{
   }
 }
 
+
+
+.campus-contain{
+    // height: 100vh;
+    // width: 100%;
+}
+
+.campus-info {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0 3rem;
+}
+
+.caimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://image.freepik.com/free-photo/businessman-black-suit_123766-49.jpg) no-repeat center center;
+  background-size: cover;
+}
 .imgca{
    height: 10rem;
    width: fit-content;
@@ -144,4 +164,8 @@ p{
       height: 20rem;
       width: fit-content;
    }
+}
+
+.campus-info::-webkit-scrollbar {
+  display: none;
 }
