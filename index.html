@@ -531,6 +531,9 @@
 
 <script src="js/gsap.js"></script>
     <script>
+      let anim=true;
+      if(anim){
+
     gsap.to(".loading-barr",5,{width:"100%"})
     gsap.to(".loading-divv",1,{x:"-100%",delay:6})
 
@@ -555,6 +558,8 @@
         html.style.overflow = "scroll"
         
     },6500);
+    anim=false;
+  }
     </script>
     <script>
       // Gsap
