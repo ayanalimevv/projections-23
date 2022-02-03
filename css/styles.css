@@ -363,6 +363,8 @@ section {
   display: flex;
   -webkit-animation: slide 12s linear  infinite;
           animation: slide 12s linear  infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .testimonial .testimonial-div {

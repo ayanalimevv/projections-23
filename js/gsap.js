@@ -1,3 +1,4 @@
+let krutik = "krutik"
 let autoCounter = document.getElementsByClassName("autoCounter")
 
 let span1 = autoCounter[0];
@@ -16,28 +17,44 @@ function counter(el, limit) {
 
 var checkCounter = true;
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.from(".about-head", { x: -100, opacity: 0, duration: 1, ease: Power2.easeOut });
-gsap.from(".about-para", { y: -100, opacity: 0, duration: 1, delay: 1, ease: Power2.easeOut });
-gsap.from(".trigger", {
-    scrollTrigger:
-    {
-        trigger: ".stats-div",
-        onEnter: function counterdiv() {
-            if(checkCounter){
-            counter(span1, 17);
-            counter(span2, 50);
-            counter(span3, 35000);
-            counter(span4, 8000);
-            }
-            checkCounter = false
-            
-        },
-        start: `20px 80%`
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.from(".about", {
+//     scrollTrigger:
+//     {
+//         trigger: ".stats-div",
+//         onEnter: function ,
+//         markers:true,
+//         start: `-50% 80%`
         
        
-    },
-    x:"-20",
-    duration: 0.5,
-    stagger: 0.5
-});
+//     },
+   
+//     duration: 0.5,
+//     stagger: 0.5
+// });
+
+
+function counterdiv() {
+    if(checkCounter){
+    counter(span1, 17);
+    counter(span2, 50);
+    counter(span3, 35000);
+    counter(span4, 8000);
+    }
+    checkCounter = false
+    
+}
+
+showScrollTop = () => {
+    const currentScrollPosition = window.pageYOffset;
+    let elementID = 'about'
+    const elementOffsetTop = document.getElementById(elementID).offsetTop
+
+    if (currentScrollPosition > elementOffsetTop - 300) {
+        counterdiv()
+    } else {
+    //  document.getElementById('campusAmb').style.color = "white";
+    }
+  }
+
+  window.addEventListener('scroll', showScrollTop)

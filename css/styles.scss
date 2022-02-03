@@ -310,6 +310,7 @@ section {
   .containerss {
     display: flex;
     animation: slide 12s linear  infinite;
+    transition: all 1s ease;
   }
   .testimonial-div {
     display: flex;
