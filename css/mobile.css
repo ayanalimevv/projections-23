@@ -100,7 +100,7 @@ body {
 
 .mheader {
   width: 100vw !important;
-  height: 15rem;
+  height: 100vh;
   background-color: red;
   margin-top: 5rem;
   background: url(../imgs/m-hero.png) no-repeat;
@@ -109,7 +109,7 @@ body {
 
 .mheader .mcontainer {
   width: 100%;
-  height: 12rem;
+  height: 100%;
   padding: 3rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,9 +118,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mheader .mcontainer h3 {
