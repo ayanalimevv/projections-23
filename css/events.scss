@@ -224,3 +224,12 @@ body{
       margin-bottom: 2rem;
     }
   }
+
+  .last-cards{
+    width: 18rem;
+  }
+  @media screen and (min-width:720px) {
+    .last-cards{
+    width: 80%;
+    }
+  }
