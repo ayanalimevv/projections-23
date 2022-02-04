@@ -99,7 +99,7 @@ form > input {
 i {
   font-size: 2rem;
   margin-right: 0.4rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   transition: all 500ms ease;
 }
 i:hover {
@@ -107,15 +107,16 @@ i:hover {
   transform: scale(1.2) rotate(360deg);
 }
 .totop {
-  position: absolute;
-  right: 1rem;
-  bottom: 0;
   padding: 1rem;
+  width: 100%;
   display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.top{
+  display:flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  cursor: pointer;
 }
 .toptop p i {
   font-size: 0.9rem;

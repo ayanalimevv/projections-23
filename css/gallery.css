@@ -25,6 +25,9 @@ body {
       flex-wrap: wrap;
   padding: 0 15px;
   margin: 5rem 0 10rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .column {
@@ -32,7 +35,7 @@ body {
       -ms-flex: 25%;
           flex: 25%;
   max-width: 25%;
-  padding: 2rem .5rem;
+  padding: 2rem 0.5rem;
 }
 
 .column #size {
@@ -49,10 +52,10 @@ body {
 .column img:hover {
   -webkit-transform: scale(0.98) translateX(-5px) translateY(-5px);
           transform: scale(0.98) translateX(-5px) translateY(-5px);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   opacity: 1;
 }
 
@@ -62,10 +65,10 @@ body {
     -webkit-box-flex: 50%;
             flex: 50%;
     max-width: 50%;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
   }
 }
 
@@ -75,10 +78,10 @@ body {
     -webkit-box-flex: 100%;
             flex: 100%;
     max-width: 100%;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
   }
 }
 /*# sourceMappingURL=gallery.css.map */

@@ -195,4 +195,17 @@ section {
 .card-body h6 {
   text-align: center !important;
 }
+
+@media screen and (min-width: 720px) {
+  .just-start {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .just-end {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+}
 /*# sourceMappingURL=cards.css.map */

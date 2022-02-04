@@ -50,7 +50,7 @@ html {
   left: 0;
   z-index: 500;
   width: 0%;
-  height: 5px;
+  height: 3px;
   background: #8cefe9;
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
