@@ -61,11 +61,13 @@ body {
   display: none;
 }
 @media screen and (max-width: 540px) {
+  .carousel{
+    grid-template-columns: repeat(2,1fr);
+  }
   .carousel-cell {
     width: 100%;
   }
   .carousel-cell .img {
-    height: 39%;
     width: 100%;
   }
 }
