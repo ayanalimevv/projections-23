@@ -230,9 +230,9 @@ body{
   }
   @media screen and (min-width:720px) {
     .just-start{
-      justify-content: start;
+      justify-content: start!important;
     }
     .just-end{
-      justify-content: end;
+      justify-content: end!important;
     }
   }
