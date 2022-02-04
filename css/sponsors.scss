@@ -1,58 +1,71 @@
 /* external css: flickity.css */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(../imgs/dragon.png);
+}
+
+.carousel {
+  margin-top: 9rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  grid-gap: 1rem;
+}
+@for $i from 1 through 31 {
+  .carousel-cell:nth-child(#{$i}) .img {
+    background: url(../logos/#{$i}.jpg) no-repeat center center;
+    background-size: cover;
   }
-  
-  body {
-    font-family: sans-serif;
-    background: url(../imgs/dragon.png);
-  }
-  
-  .carousel {
-    margin-top: 9rem;
-    margin-bottom: 4rem;
-  }
-  @for $i from 1 through 31 {
-      .carousel-cell:nth-child(#{$i}) .img {
-        background: url(../logos/#{$i}.jpg) no-repeat center center;
-        background-size: cover;
-      }
+}
+.carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 0.4rem;
+  transition: all 500ms ease;
+  &:hover {
+    transform:translateY(-10px) !important;
+    .img {
+      transform: scale(1.05);
     }
-  .carousel-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 66.6%;
-    height: 400px;
-    margin-right: 10px;
-    border-radius: 5px;
-    padding: 1.4rem;
-    background: rgba($color: #000000, $alpha: 0.25);
-    backdrop-filter: blur(4px);
-    border-radius: 0.4rem;
-    &:hover {
-      .img {
-        transform: scale(1.01);
-      }
   }
-  
-  
+
   .img {
-      width: 69%;
-      height: 75%;
-      transition: all 250ms ease;
+    width: 150px;
+    height: 57px;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
   }
+}
+.flickity-page-dots {
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .carousel-cell {
+    width: 100%;
   }
-  .flickity-page-dots{
-      display: none;
+  .carousel-cell .img {
+    height: 39%;
+    width: 100%;
   }
-  @media screen and (max-width: 540px) {
-    .carousel-cell {
-      width: 100%;
-    }
-    .carousel-cell .img{
-        height: 39%;
-        width: 100%;
-    }
-  }
+}

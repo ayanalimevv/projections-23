@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-</head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head> -->
 
 <body oncontextmenu="return false">
 
@@ -90,11 +90,7 @@
       </div>
     </div>
   </nav>
-    <!-- Flickity HTML init -->
     <div class="carousel" data-flickity='{"autoPlay": 2000 }'>
-      <div class="carousel-cell">
-        <div class="img"></div>
-      </div>
       <div class="carousel-cell">
         <div class="img"></div>
       </div>
@@ -306,7 +302,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script>
+        gsap.from(".carousel-cell",1,{opacity:0,y:"-50%",stagger:0.3});
+      </script>
+   <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
 </body>
 
 </html>
