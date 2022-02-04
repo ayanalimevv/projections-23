@@ -193,3 +193,12 @@ html{
       margin-bottom: 2rem;
     }
   }
+
+  @media screen and (min-width:720px) {
+    .just-start{
+      justify-content: start;
+    }
+    .just-end{
+      justify-content: end;
+    }
+  }
