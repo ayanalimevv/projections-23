@@ -229,7 +229,10 @@ body{
     width: 18rem;
   }
   @media screen and (min-width:720px) {
-    .last-cards{
-    width: 80%;
+    .just-start{
+      justify-content: start;
+    }
+    .just-end{
+      justify-content: end;
     }
   }
