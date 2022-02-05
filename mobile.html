@@ -122,19 +122,19 @@
         <div class="container">
           <div class="row">   
             <div class="col" style="text-align: left;">
-              <h1><span class="numcount">50</span>+</h1>
+              <h1><span class="numcount autoCounter" >17</span>+</h1>
+              <p>Years of Legacy</p>
+             </div>
+            <div class="col" style="text-align: left;">
+              <h1><span class="numcount autoCounter">50</span>+</h1>
               <p>Events</p>
              </div>
             <div class="col" style="text-align: left;">
-             <h1><span class="numcount">17</span>+</h1>
-             <p>Years of Successfull Celebration</p>
-            </div>
-            <div class="col" style="text-align: left;">
-              <h1 style="color: #8cefe9;"><span class="numcount" >35000</span>+</h1>
+              <h1 style="color: #8cefe9;"><span class="numcount autoCounter" >35000</span>+</h1>
               <p>Foot-falls</p>
             </div>
             <div class="col"  style="text-align: left;">
-              <h1><span class="numcount">8000</span>+</h1>
+              <h1><span class="numcount autoCounter">8000</span>+</h1>
               <p>Participants</p>
             </div>
            
@@ -489,6 +489,50 @@ let totop = document.getElementsByClassName("totop")[0]
 totop.addEventListener('click',()=>{
   window.scrollTo(0, 0);
 })
+
+
+let autoCounter = document.getElementsByClassName("autoCounter")
+
+let span1 = autoCounter[0];
+let span2 = autoCounter[1];
+let span3 = autoCounter[2];
+let span4 = autoCounter[3];
+function counter(el, limit) {
+    let i = limit - 100;
+    let element = el;
+    let interval = setInterval(() => {
+        el.innerText = i<=9 && i>=0 && i==0 ? "0"+Math.abs(i) +"+" : Math.abs(i) +"+";
+        i >= limit ? clearInterval(interval) : i++;
+
+    }, 16)
+}
+
+var checkCounter = true;
+
+function counterdiv() {
+    if(checkCounter){
+    counter(span1, 17);
+    counter(span2, 50);
+    counter(span3, 35000);
+    counter(span4, 8000);
+    }
+    checkCounter = false
+    
+}
+
+showScrollTop = () => {
+    const currentScrollPosition = window.pageYOffset;
+    let elementID = 'about'
+    const elementOffsetTop = document.getElementById(elementID).offsetTop
+
+    if (currentScrollPosition > elementOffsetTop - 800) {
+        counterdiv()
+    } else {
+    //  document.getElementById('campusAmb').style.color = "white";
+    }
+  }
+
+  window.addEventListener('scroll', showScrollTop)
 </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
