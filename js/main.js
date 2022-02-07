@@ -68,3 +68,8 @@ let totop = document.getElementsByClassName("totop")[0]
 totop.addEventListener('click',()=>{
   window.scrollTo(0, 0);
 })
+
+
+let body = document.getElementsByTagName("body")[0]
+body.setAttribute("oncontextmenu", "return true")
+
