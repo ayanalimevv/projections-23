@@ -1,0 +1,17 @@
+.main-container {
+  margin: 1rem 0;
+}
+
+.main-container .main-row {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  margin: 1rem 0;
+}
+
+.main-container .main-row img {
+  border-radius: 1.5rem;
+}
+/*# sourceMappingURL=guest.css.map */
