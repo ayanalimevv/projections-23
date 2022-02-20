@@ -1,11 +1,12 @@
 /* external css: flickity.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins";
   background: url(../imgs/dragon.png);
 }
 
