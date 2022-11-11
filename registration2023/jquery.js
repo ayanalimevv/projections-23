@@ -1,6 +1,6 @@
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-const URL = "https://script.google.com/macros/s/AKfycbw3HuePWAHR704zkdWtv4SpSRGePE8dM5t9YRtOgY8J0UNBtU-xhPnmtre7G14DIy7u/exec"
+const URL = "https://script.google.com/macros/s/AKfycbyEI4QiUXTUyHGJ976I7EE9G4cUJu6ync6Gn-XT142g7peF1xl1e8K7Q7WebjCgcMYF/exec"
 
 jQuery('#contactForm').on('submit',function(e){
 e.preventDefault();
