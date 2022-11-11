@@ -1,10 +1,12 @@
 const delay = ms => new Promise(res => setTimeout(res, ms));
-const URL = "https://script.google.com/macros/s/AKfycbwNuls8YyoPgRDoSfU0p7LLK_lCs8uyK7YbKjik2tL5Yb-Irv_1bJtt1-g2d-cO5gCF/exec"
+
+const URL = "https://script.google.com/macros/s/AKfycbw3HuePWAHR704zkdWtv4SpSRGePE8dM5t9YRtOgY8J0UNBtU-xhPnmtre7G14DIy7u/exec"
+
 jQuery('#contactForm').on('submit',function(e){
 e.preventDefault();
 jQuery('#btnSubmit').html('Please wait...');
 jQuery('#btnSubmit').attr('disabled',true);
-$.ajax({
+jQuery.ajax({
   url: URL,
   type:'POST',
   data:jQuery('#contactForm').serialize(),
