@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 html {
@@ -31,27 +31,19 @@ html {
     width: 100%;
   }
 }
-
 .loading-divv {
   z-index: 100000000;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #0b1321;
   position: relative;
   -webkit-animation: trans 1s linear 3.2s;
           animation: trans 1s linear 3.2s;
 }
-
 .loading-divv .loading-barr {
   position: absolute;
   top: 0;
@@ -60,13 +52,11 @@ html {
   height: 0.1rem;
   background-color: #8cefe9;
 }
-
 .loading-divv .loading-count {
   opacity: 0.3;
   color: #8cefe9;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-
 .loading-divv .countss {
   -webkit-animation: big 5s linear;
           animation: big 5s linear;
@@ -89,26 +79,16 @@ html {
     font-size: 6rem;
   }
 }
-
 @-webkit-keyframes trans {
-  from {
-  }
   to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
-
 @keyframes trans {
-  from {
-  }
   to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
-
 .countss {
   font-size: 8.5rem !important;
-}
-/*# sourceMappingURL=loading.css.map */
+}/*# sourceMappingURL=loading.css.map */

@@ -3,69 +3,43 @@
 *, *::after, *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 body {
   background: url(../imgs/footer.png) no-repeat;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-family: 'Poppins';
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-family: "Poppins";
+  flex-direction: column;
   overflow-x: hidden;
 }
-
 body .main {
   width: 1280px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .form-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   padding: 2rem;
   margin: 2rem 0 3rem 0;
   margin-top: 10rem;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .form-div form input, .form-div form textarea {
   background: rgba(255, 255, 255, 0.25);
   border: none;
@@ -75,60 +49,40 @@ body .main {
           backdrop-filter: blur(4px);
   color: white;
 }
-
 .form-div form .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .form-div form button {
   width: 100%;
   padding: 10px 15px;
   background-color: #8CEFE9;
   color: #000;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   text-align: center;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer;
   font-weight: 400;
 }
-
-.form-div ::-webkit-input-placeholder {
+.form-div ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .form-div :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
-.form-div ::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .form-div ::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .form-div .content i {
   font-size: 2rem;
   margin-right: 0.4rem;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .form-div .content i:hover {
-  color: white;
-  -webkit-transform: scale(1.2) rotate(360deg);
-          transform: scale(1.2) rotate(360deg);
+  color: rgb(255, 255, 255);
+  transform: scale(1.2) rotate(360deg);
 }
 
 @media screen and (max-width: 720px) {
@@ -139,20 +93,16 @@ body .main {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 360px) {
   .container-foot {
     padding-left: 3rem;
   }
 }
-
 .contact-submit {
   background-color: #8CEFE9 !important;
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
   font-weight: 500 !important;
 }
-
 .contact-submit:hover {
   color: #fff !important;
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

@@ -6,8 +6,7 @@
 *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -18,7 +17,6 @@ a {
 html {
   cursor: none;
 }
-
 html a:hover {
   cursor: none;
 }
@@ -103,24 +101,14 @@ a {
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #0b1321;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -138,21 +126,13 @@ section {
 .tech-events {
   margin-top: 1rem;
 }
-
 .tech-events .row {
   margin: 3rem 0;
 }
-
 .tech-events .row .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -170,9 +150,8 @@ section {
   font-weight: 400;
   border: 2px solid #8cefe9;
   width: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 .btn-register:hover {
   background-color: transparent !important;
   color: #fff;
@@ -184,9 +163,8 @@ section {
   font-weight: 400;
   border: 2px solid #8cefe9;
   width: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 .btn-secondary:hover {
   background-color: #8cefe9 !important;
   color: #000;
@@ -198,14 +176,9 @@ section {
 
 @media screen and (min-width: 720px) {
   .just-start {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
+    justify-content: start !important;
   }
   .just-end {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: end !important;
+    justify-content: end !important;
   }
-}
-/*# sourceMappingURL=cards.css.map */
+}/*# sourceMappingURL=cards.css.map */

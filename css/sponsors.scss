@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins";
   background: url(../imgs/dragon.png);
+  background-size: cover;
   // padding: .5rem;
 }
 
@@ -28,12 +29,12 @@ body {
   place-items: center;
   grid-gap: 1rem;
 }
-@for $i from 1 through 31 {
-  .carousel-cell:nth-child(#{$i}) .img {
-    background: url(../logos/#{$i}.jpg) no-repeat center center;
-    background-size: cover;
-  }
-}
+// @for $i from 1 through 43 {
+//   .carousel-cell:nth-child(#{$i}) .img {
+//     background: url(../logos/#{$i}.jpg),url(../logos/#{$i}.png),url(../logos/#{$i}.jpeg) no-repeat center center;
+//     background-size: cover;
+//   }
+// }
 .carousel-cell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +47,8 @@ body {
   align-items: center;
   width: 150px;
   margin: 1rem 0rem;
-  height: 150px;
+  flex-direction: column;
+  color: #fff;
   margin-right: 10px;
   border-radius: 5px;
   padding: 1rem;
@@ -55,6 +57,12 @@ body {
   backdrop-filter: blur(4px);
   border-radius: 0.4rem;
   transition: all 500ms ease;
+  min-height: 202px;
+  p{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0 !important;
+  }
   &:hover {
     transform:translateY(-10px) !important;
     .img {
@@ -63,8 +71,8 @@ body {
   }
 
   .img {
-    width: 150px;
-    height: 57px;
+    width: 106px;
+    // height: 57px;
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
   }
@@ -72,12 +80,16 @@ body {
 .flickity-page-dots {
   display: none;
 }
+.transparent{
+  background: transparent !important;
+}
 @media screen and (max-width: 540px) {
   .carousel{
     grid-template-columns: repeat(2,1fr);
   }
   .carousel-cell {
     width: 100%;
+    min-height: 276px;
   }
   .carousel-cell .img {
     width: 100%;
