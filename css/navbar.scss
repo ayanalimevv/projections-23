@@ -1,12 +1,14 @@
-
-body{
+body {
   overflow-x: hidden;
 }
+
 .navbar {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(7px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 20px rgb(0 0 0 / 98%);
   position: fixed;
   top: 0;
   // left: 0;
@@ -14,58 +16,75 @@ body{
   z-index: 1000;
   justify-self: center;
   justify-content: center;
-  .container{
+
+  .container {
     max-width: 1280px;
   }
 
-    .navbar-brand{
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-   
-    a{
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  a {
+    color: #fff;
+
+    &:focus,
+    &:active {
       color: #fff;
-      &:focus,&:active{
-        color: #fff;
-      }
+    }
 
-    
-    }
-    .nav-item{
-      padding: 0.3rem 0.5rem;
-      border-radius: 2rem;
-      transition: all 1s ease-in;
-      &:hover{
-        a{
-          color: #8CEFE9;
-        }
+
+  }
+
+  .nav-item {
+    padding: 0.3rem 0.5rem;
+    border-radius: 2rem;
+    transition: all 1s ease-in;
+    // text-shadow: rgb(255 215 77 / 60%) -1px -1px 6px, rgb(124 127 255 / 60%) 1px 1px 6px;
+    animation: disco 1s infinite ease;
+
+    &:hover {
+      a {
+        color: #8CEFE9;
       }
-    }
-  
-    .navbar-nav{
-      margin-left: auto;
     }
   }
 
-  .active {
-      color: #8CEFE9;
+  .navbar-nav {
+    margin-left: auto;
   }
+}
 
-  .dropdown-menu.show {
-    display: block;
-    background: #000000d9!important;
+@keyframes disco{
+  0%,50%{
+    text-shadow: rgb(255 215 77 / 60%) -1px -1px 6px, rgb(124 127 255 / 60%) 1px 1px 6px;
+  }
+  100%{
+    text-shadow: rgba(255,255,255,0);
+  }
+}
+
+.active {
+  color: #8CEFE9;
+}
+
+.dropdown-menu.show {
+  display: block;
+  background: #000000d9 !important;
 
 }
 
 
 
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #fff!important;
-    background-color: #00000070!important;
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff !important;
+  background-color: #00000070 !important;
 }
 
 .navbar-toggler-icon {
-  background-image: url(../svg/menu.svg)!important;
+  background-image: url(../svg/menu.svg) !important;
 }
 
 .logo {
@@ -75,9 +94,9 @@ body{
 
 
 .whatsapp {
-  background:rgba(0,0,0,0.25);
-  backdrop-filter:blur(4px);
-  padding:.8rem;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  padding: .8rem;
   position: fixed;
   border-radius: 50%;
   right: 2rem;
@@ -88,9 +107,11 @@ body{
   align-items: center;
   cursor: pointer;
   transition: all 500ms ease;
-  &:hover{
+
+  &:hover {
     transform: scale(0.9);
   }
+
   img {
     height: 2rem;
     width: 2rem;

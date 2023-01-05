@@ -121,7 +121,7 @@ section {
 .hero {
   height: 100vh;
   width: 100%;
-  background: url(../imgs/hero-bg.png) no-repeat center center;
+  background: url(../imgs/test2.png) no-repeat center center;
   background-size: cover;
   position: -webkit-sticky;
   position: sticky;
@@ -293,10 +293,20 @@ section {
 }
 .opt-menu .col {
   display: flex;
+  margin: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.4rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease;
+}
+.opt-menu .col:hover {
+  transform: translateY(-10%);
+  border: 1px solid #8cefe9;
 }
 
 .testimonial {
@@ -316,9 +326,10 @@ section {
 .testimonial .testimonial-div {
   display: flex;
   margin: 1rem;
-  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(24px);
   padding: 1rem 1.5rem;
   justify-content: center;
   border-radius: 6px;
@@ -327,6 +338,13 @@ section {
   height: fit-content;
   flex-direction: column;
   width: 15rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.5s ease;
+}
+.testimonial .testimonial-div:hover {
+  border: 1px solid #8cefe9 !important;
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgb(0, 0, 0);
 }
 .testimonial .testimonial-div h5 {
   font-size: 1rem;
@@ -359,8 +377,7 @@ section {
 
 .glimpse {
   display: block;
-  width: 440px;
-  margin-left: -3rem;
+  width: auto;
   content: "";
   height: 350px;
   border: 2px solid #fff;

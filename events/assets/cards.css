@@ -100,7 +100,9 @@ a {
   --shc-mutated-brightness: 26, 31, 39;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -137,11 +139,19 @@ section {
 
 .card {
   border-radius: 0.8rem;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.67);
+  transition: 0.5s ease;
   padding: 1rem;
+}
+.card:hover {
+  transform: scale(1.12) !important;
+  border: 2px solid rgb(200, 38, 34);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .btn-register {
