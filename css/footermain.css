@@ -1,0 +1,168 @@
+.footer {
+	width: 100%;
+	height: auto;
+	padding: 2rem;
+	/* background: url(../imgs/footer.png) no-repeat; */
+	background: rgba(0, 0, 0, 0.25);
+	background-size: cover;
+	backdrop-filter: blur(4px);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 4rem;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #fff;
+}
+.footer address {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer address button {
+	padding: 0.5rem 1rem;
+}
+iframe {
+	width: 20rem;
+	height: 15rem;
+}
+form {
+	margin-top: 0.5rem;
+}
+form button {
+	width: 100%;
+	padding: 10px 15px;
+}
+form > input {
+	margin-bottom: 0.5rem;
+}
+
+.footer a img {
+	height: 30px;
+}
+
+.mail {
+	margin-top: 12px !important;
+}
+.address {
+	display: flex;
+	flex-direction: column;
+	padding: 0 !important;
+	margin-top: 1rem;
+}
+.address h5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.address p {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.address i {
+	font-size: 1.2rem;
+}
+.address * {
+	margin: 0.5rem;
+	margin-left: 0;
+	height: auto;
+}
+.address button {
+	padding: 10px 15px;
+	width: 10rem;
+	border: 2px solid #8cefe9;
+	background: transparent;
+	transition: all 500ms ease;
+}
+.address button:hover,
+form button:hover {
+	background: #8cefe93b !important;
+}
+.address button a {
+	color: #fff;
+}
+.credits {
+	margin-top: 1.5rem;
+	text-align: center;
+}
+.credits p:nth-child(2) {
+	font-size: 1.2rem;
+}
+
+.footer-icons > a {
+	margin: 0.5rem;
+}
+
+i {
+	font-size: 2rem;
+	margin-right: 0.4rem;
+	color: #fff;
+	transition: all 500ms ease;
+}
+i:hover {
+	color: rgba(255, 255, 255, 1);
+	transform: scale(1.2) rotate(360deg);
+}
+.totop {
+	padding: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	cursor: pointer;
+}
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.toptop p i {
+	font-size: 0.9rem;
+}
+form {
+	margin-top: 0 !important;
+}
+form .form-group {
+	display: flex;
+	flex-direction: column;
+}
+form .form-group input,
+form .form-group textarea {
+	padding: 0.5rem;
+}
+form button {
+	border: 2px solid #8cefe9 !important;
+	background: transparent !important;
+	transition: all 500ms ease !important;
+	color: white;
+}
+::placeholder {
+	font-size: 0.8rem;
+}
+@media only screen and (max-width: 720px) {
+	.footer {
+		justify-content: center;
+		text-align: center;
+	}
+	.col {
+		flex: none;
+	}
+	.address {
+		align-items: center;
+	}
+	.col:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	iframe {
+		width: 15rem;
+		height: 10rem;
+	}
+}
+
+.link-color {
+	color: #8cefe9 !important;
+}
